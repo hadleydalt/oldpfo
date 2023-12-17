@@ -1,10 +1,10 @@
 .App {
   display: flex;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
   width: 100vw;
   background: #FFF9E6;
+  justify-content: center;
+  align-items: center;
 }
 
 .Box1-exterior {
@@ -14,7 +14,19 @@
   width: 270px;
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: start;
+  position: absolute;
+}
+
+.Box1-bg {
+  width: 270px;
+  background: #E8E6DF;
+  border: 2px solid black;
+  border-radius: 7px;
+  margin-top: 7px;
+  margin-left: 7px;
+  position: absolute;
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.3))
 }
 
 .Box1-interior {
@@ -22,6 +34,16 @@
   background: white;
   width: 256px;
   margin-bottom: 7px;
+  margin-top: 41px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Box1-image {
+  border-radius: 4px 4px 0px 0px;
+  width: 256px;
+  background: gray;
 }
 
 .vertical-line {
@@ -36,6 +58,81 @@
   width: 100vw;
   margin-top: 3.125vh;
   opacity: 0.5;
+}
+
+.Box1-top-wrapper {
+  display: flex;
+  height: 40px;
+  width: 245px;
+  position: absolute;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.white-x {
+  background: white;
+  height: 20px;
+  width: 20px;
+  border-radius: 3px;
+  border-bottom: 3px solid gray;
+  border-right: 3px solid lightgray;
+  border-top: 3px solid #fafafa;
+  border-left: 3px solid #E7E7E7;
+  color: black;
+  font-weight: bold;
+  font-family: 'Orbitron';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+}
+
+.Box1-button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 245px;
+  height: 55px;
+}
+
+.Box1-button-background {
+  background: black;
+  height: 42px;
+  width: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Box1-button {
+  background: white;
+  height: 30px;
+  border-bottom: 4px solid gray;
+  border-right: 4px solid lightgray;
+  border-top: 4px solid #fafafa;
+  border-left: 4px solid #E7E7E7;
+  color: black;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Silkscreen';
+  font-size: 12px;
+}
+
+.box-top-text {
+  width: 200px;
+  color: white;
+  font-size: 12px;
+  font-family: 'Silkscreen';
+}
+
+.planet {
+  position: absolute;
+  width: 200px;
+  margin-top: -90px;
+  margin-left: 20px;
+  transform: rotate(20deg);
 }
 
 .App-logo {
