@@ -3,7 +3,7 @@ import './App.css'
 
 export const Vertical = (props) => {
 
-    const lines = Array.from({ length: 50 }, (_, index) => index + 1)
+    const lines = Array.from({ length: 48 }, (_, index) => index + 1)
 
     return (
         <div>

@@ -3,7 +3,7 @@ import './App.css'
 
 export const Horizontal = (props) => {
 
-    const lines = Array.from({ length: 32 }, (_, index) => index + 1)
+    const lines = Array.from({ length: 30 }, (_, index) => index + 1)
 
     return (
         <div style={{position: "absolute"}}>

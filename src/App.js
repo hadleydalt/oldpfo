@@ -1,5 +1,6 @@
 import './App.css';
 import { Box1 } from './Box1'
+import { Box2 } from './Box2'
 import { Vertical } from './Vertical'
 import { Horizontal } from './Horizontal'
 
@@ -8,7 +9,10 @@ function App() {
     <div className="App">
       <Vertical color="#EEDFB1"/>
       <Horizontal color="#EEDFB1"/>
-      <Box1 planet={true} bg={true} height={290}/>
+      <div className="content-wrapper">
+        <Box1 planet={true} bg={true} height={290}/>
+        <Box2 height={220}/>
+      </div>
     </div>
   );
 }
