@@ -13,6 +13,9 @@
   width: 80vw;
   position: absolute;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: fixed;
+  overflow: scroll;
 }
 
 .Box1-wrapper {
@@ -23,6 +26,191 @@
   width: 400px;
 }
 
+.Notepad-wrapper {
+  width: 250px;
+}
+
+.Notepad-bg {
+  width: 250px;
+  background: black;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Notepad-exterior {
+  width: 240px;
+  background: lightgray;
+  border-bottom: 3px solid gray;
+  border-right: 3px solid lightgray;
+  border-top: 3px solid #fafafa;
+  border-left: 3px solid #E7E7E7;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Notepad-header {
+  width: 240px;
+  height: 24px;
+  border: 1px solid black;
+  border-radius: 7px 7px 0px 0px;
+  background: linear-gradient(90deg, rgb(223, 202, 239), rgb(191, 230, 239));
+  display: flex;
+  justify-content: center;
+}
+
+.Notepad-header-wrapper {
+  width: 225px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Notepad-title {
+  width: 215px;
+  font-family: "Silkscreen";
+  color: black;
+  font-size: 12px;
+}
+
+.Notepad-x {
+  width: 13px;
+  height: 13px;
+  border-radius: 3px;
+  border: 1px solid black;
+  filter: drop-shadow(2px 2px 0px gray);
+  background: white;
+  font-family: 'Orbitron';
+  color: black;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Notepad-menu {
+  width: 230px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.Notepad-menu-unselected {
+  width: auto;
+  height: 20px;
+  font-family: "Silkscreen";
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.Notepad-menu-selected {
+  width: auto;
+  height: 20px;
+  font-family: "Silkscreen";
+  font-size: 10px;
+  background: #ececec;
+  filter: drop-shadow(1px 1px 1px gray);
+  font-family: "Silkscreen";
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.Notepad-enter-wrapper {
+  width: 225px;
+}
+
+.Notepad-enter {
+  width: 225px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 7px;
+  margin-left: -3px;
+}
+
+.Notepad-cursor {
+  font-family: "Silkscreen";
+  font-size: 18px;
+  position: absolute;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Notepad-cursor {
+    animation: Notepad-cursor-blink infinite 3s linear;
+  }
+}
+
+@keyframes Notepad-cursor-blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.Title-box-wrapper {
+  width: 300px;
+  height: 100px;
+}
+
+.Title-box {
+  width: 300px;
+  height: 70px;
+  border: 1px solid black;
+  font-family: "Silkscreen";
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Title-box-box {
+  width: 6px;
+  height: 6px;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
+  border: 1px solid black;
+  background: white;
+  position: absolute;
+}
+
+.Title-box-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: transparent;
+  position: absolute;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Title-box-inner-circle {
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+  background: black;
+}
+
+.tb-button {
+  background: linear-gradient(45deg, rgb(255, 186, 238) 0%, rgb(194, 244, 255) 50%, rgb(240, 255, 172) 100%);
+}
+
+.tb-button-normal {
+  background: white;
+}
+
 .Box2-bg {
   background: black;
   width: 400px;
@@ -30,6 +218,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 7px;
+  filter: drop-shadow(8px 8px 0px rgba(0, 0, 0, 0.2))
 }
 
 .Box2-exterior {
@@ -41,6 +230,105 @@
   border-right: 7px solid lightgray;
   border-top: 7px solid #fafafa;
   border-left: 7px solid #E7E7E7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Box2-interior {
+  background: white;
+  border: 2px dotted lightgray;
+  border-radius: 7px;
+  width: 367px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Box2-header {
+  background: linear-gradient(90deg, rgb(255, 186, 238) 0%, rgb(194, 244, 255) 50%, rgb(240, 255, 172) 100%);
+  width: 367px;
+  height: 35px;
+  border-radius: 7px 7px 0px 0px;
+  border: 1px solid rgb(41, 41, 41);
+  position: absolute;
+}
+
+.Box2-header-wrapper {
+  width: 355px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.Box2-header-text {
+  width: 320px;
+  font-size: 12px;
+  font-family: 'Silkscreen';
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Box2-buttons-container {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.Box2-decor-bg {
+  width: 100%;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+
+.Box2-decor {
+  width: 97%;
+  height: 88%;
+  border: 3px solid white;
+  background: linear-gradient(90deg, rgb(210, 167, 182) 0%, rgb(176, 211, 219) 50%, rgb(159, 212, 203) 100%);
+}
+
+.Box2-planet {
+  height: 100px;
+  position: absolute;
+  margin-top: -5%;
+  margin-left: 10%;
+  filter: drop-shadow(1px 1px 3px lightgray);
+}
+
+.Box2-button-bg {
+  width: 50%;
+  background:black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.Box2-button {
+  width: 92%;
+  height: 75%;
+  background: white;
+  border-bottom: 4px solid gray;
+  border-right: 4px solid lightgray;
+  border-top: 4px solid #fafafa;
+  border-left: 4px solid #E7E7E7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Silkscreen";
+  font-size: 12px;
 }
 
 .Box1-exterior {
@@ -50,7 +338,7 @@
   width: 270px;
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
   position: absolute;
 }
 
