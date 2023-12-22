@@ -37,6 +37,43 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: center;
+}
+
+.content-wrapper {
+  display: flex;
+  height: 80vh; 
+  width: 80vw;
+  position: absolute;
+  justify-content: space-evenly;
+}
+
+.Box1-wrapper {
+  width: 270px;
+}
+
+.Box2-wrapper {
+  width: 400px;
+}
+
+.Box2-bg {
+  background: black;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+}
+
+.Box2-exterior {
+  border-radius: 7px;
+  background: white;
+  width: 382px;
+  display: flex;
+  border-bottom: 7px solid gray;
+  border-right: 7px solid lightgray;
+  border-top: 7px solid #fafafa;
+  border-left: 7px solid #E7E7E7;
 }
 
 .Notepad-exterior {
