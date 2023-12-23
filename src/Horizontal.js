@@ -9,7 +9,7 @@ export const Horizontal = (props) => {
         <div style={{position: "fixed"}}>
             <div style={{display: "flex", flexDirection: "column"}}>
                 {lines.map((lineNum) => (
-                    <div key={lineNum} className="horizontal-line" style={{backgroundColor: props.color}}>
+                    <div key={lineNum} className="horizontal-line" style={{backgroundColor: props.color, opacity: props.opacity}}>
                     </div>
                 ))}
             </div>

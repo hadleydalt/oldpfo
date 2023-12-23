@@ -1,18 +1,35 @@
 .App {
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  width: 100vw;
+  height: 100vh;
 }
 
 .sidebar {
   height: 100vh;
   width: 20vw;
-  background: blue;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
   position: fixed;
+  z-index: 3;
+}
+
+.first-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.second-page {
+  width: 100vw;
+  background: rgba(128, 0, 128, 0.0);
+  z-index: 3;
 }
 
 .first-wrapper {
@@ -24,19 +41,22 @@
   justify-content: flex-end;
 }
 
-.content-wrapper {
-  display:flex;
-  flex-direction: column;
-  background: yellow;
-}
-
 .splash-page {
   display: flex; 
-  width: 90vw;
-  position: absolute;
+  width: 80vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: pink;
+  z-index: 3;
+}
+
+.splash-page-inner {
+  background: yellow;
+  display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  background: pink;
+  height: 80vh;
 }
 
 .Box2-wrapper {
@@ -210,7 +230,7 @@
 .Title-box-wrapper {
   width: 20vw;
   height: 15vh;
-  background: green;
+
   display: flex;
   align-items: center;
 }
@@ -473,14 +493,12 @@
   height: 100vh;
   width: 1px;
   margin-right: 2vw;
-  opacity: 0.5;
 }
 
 .horizontal-line {
   height: 1px;
   width: 100vw;
   margin-top: 3.125vh;
-  opacity: 0.5;
 }
 
 .Box1-top-wrapper {
