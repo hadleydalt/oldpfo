@@ -12,6 +12,7 @@
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
+  position: fixed;
 }
 
 .first-wrapper {
@@ -30,10 +31,6 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   background: pink;
-}
-
-.Box1-wrapper {
-  width: 270px;
 }
 
 .Box2-wrapper {
@@ -64,10 +61,6 @@
 
 .Box1-wrapper {
   width: 270px;
-}
-
-.Box2-wrapper {
-  width: 400px;
 }
 
 .Box2-bg {
