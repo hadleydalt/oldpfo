@@ -40,17 +40,22 @@ function App() {
         <div className="first-wrapper">
           <Vertical color="#EEDFB1" opacity={opacity}/>
           <Horizontal color="#EEDFB1" opacity={opacity}/>
-
           <div className="splash-page">
-            <div className="splash-page-inner">
-              <Box1 planet={true} bg={true} height={290}/>
-              <Box2 height={220}/>
-              <Notepad height={330}/>
-              <ThreeButtons square={true}/>
-              <ThreeButtons square={false}/>
-              <Image source='Papers' width={150}/>
-              <Image source='Folder' width={150}/>
-            </div>
+              <div className="sp-col-1">
+                <Box1 planet={true} bg={true} height={290}/>
+                <ThreeButtons square={true}/>
+              </div>
+              <div className="sp-col-2">
+                <Box2 height={220}/>
+                <div className="icons-container">
+                  <Image source='Papers' width={150}/>
+                  <Image source='Folder' width={150}/>
+                </div>
+              </div>
+              <div className="sp-col-3">
+                <Notepad height={330}/>
+                <ThreeButtons square={false}/>
+              </div>
           </div>
         </div>
       </div>
@@ -68,14 +73,12 @@ export default App;
 
 /* 
 
-In first wrapper:
+splash page
 
-            <Box1 planet={true} bg={true} height={290}/>
-            <Box2 height={220}/>
-            <Notepad height={330}/>
-            <ThreeButtons square={true}/>
-            <ThreeButtons square={false}/>
-            <Image source='Papers' width={150}/>
-            <Image source='Folder' width={150}/>
+              <Box1 planet={true} bg={true} height={290}/>
+              <Box2 height={220}/>
+              <Notepad height={330}/>
+              <ThreeButtons square={true}/>
+              <ThreeButtons square={false}/>
 
 */
