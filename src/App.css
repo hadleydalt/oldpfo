@@ -25,6 +25,12 @@
 }
 
 .content-wrapper {
+  display:flex;
+  flex-direction: column;
+  background: yellow;
+}
+
+.splash-page {
   display: flex; 
   width: 90vw;
   position: absolute;

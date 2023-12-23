@@ -18,13 +18,16 @@ function App() {
         <Vertical color="#EEDFB1"/>
         <Horizontal color="#EEDFB1"/>
         <div className="content-wrapper">
-          <Box1 planet={true} bg={true} height={290}/>
-          <Box2 height={220}/>
-          <Notepad height={330}/>
-          <ThreeButtons square={true}/>
-          <ThreeButtons square={false}/>
-          <Image source='Papers' width={150}/>
-          <Image source='Folder' width={150}/>
+          <div className="splash-page">
+            <Box1 planet={true} bg={true} height={290}/>
+            <Box2 height={220}/>
+            <Notepad height={330}/>
+            <ThreeButtons square={true}/>
+            <ThreeButtons square={false}/>
+            <Image source='Papers' width={150}/>
+            <Image source='Folder' width={150}/>
+          </div>
+          <div className="hi">Hi</div>
         </div>
       </div>
     </div>
