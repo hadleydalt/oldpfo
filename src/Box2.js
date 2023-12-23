@@ -20,6 +20,8 @@ export const Box2 = (props) => {
                         <div className="Box2-buttons-container" style={{height: String((props.height - 60) + "px")}}>
                             <div className="Box2-decor-bg">
                                 <div className="Box2-decor">
+                                    <img className="Box2-panel" src={require('./Panel.png')} alt=""/>
+                                    <img className="Box2-planet-noring" src={require('./PlanetNoRing.png')} alt=""/>
                                     <img className="Box2-planet" src={require('./Planet.png')} alt=""/>
                                 </div>
                             </div>
