@@ -40,7 +40,9 @@ export const Canvas = (props) => {
         <>
         <div className="Paintbox-erase" 
             onClick={handleErase}
-        />
+        >
+            ERASE
+        </div>
         <div 
             className="Paintbox-canvas"
             onMouseDown={handleMouseDown}
