@@ -3,8 +3,8 @@ import './App.css'
 
 export const Canvas = (props) => {
 
-    const cols = Array.from({ length: 120 }, (_, index) => index + 1)
-    const rows = Array.from({ length: 20 }, (_, index) => index + 1)
+    const cols = Array.from({ length: 117 }, (_, index) => index + 1)
+    const rows = Array.from({ length: 6 }, (_, index) => index + 1)
 
 
     const color = props.curr
@@ -47,7 +47,7 @@ export const Canvas = (props) => {
                                 <div key={r} 
                                     className="Paintbox-pixel" 
                                     onMouseEnter={()=>handleMouseEnter(r, c)}
-                                    style={{background: pixelColors.has(currIndex) ? color : "white"}}
+                                    style={{background: pixelColors.has(currIndex) ? color : "purple"}}
                                 />
                             )
                         })}
