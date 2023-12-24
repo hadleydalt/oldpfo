@@ -1,25 +1,17 @@
 import React from 'react'
 import './App.css'
 import { Canvas } from './Canvas'
+import { PaintBoxPaint } from './PaintBoxPaint'
+import { colorMap } from './Constants'
+import { NotepadMenuOpt } from './NotepadMenuOpt'
 
 export const PaintBox = (props) => {
 
     const [color, setColor] = React.useState("red")
 
-    const colorMap = {
-        "red": "rgb(234, 120, 120)",
-        "red-orange": "rgb(234, 160, 120)",
-        "yellow-orange": "rgb(234, 200, 120)",
-        "yellow": "rgb(230, 234, 120)",
-        "yellow-green": "rgb(181, 234, 120)",
-        "green": "rgb(120, 234, 126)",
-        "blue": "rgb(120, 234, 226)",
-        "periwinkle": "rgb(120, 181, 234)",
-        "indigo": "rgb(120, 120, 234)",
-        "purple": "rgb(173, 120, 234)",
-        "pink": "rgb(234, 120, 217)",
-        "gray": "rgb(172, 172, 172)"
-    }
+    const colors = ["red", "red-orange", "yellow-orange", "yellow", "yellow-green", "green", "blue", "periwinkle", "indigo", "purple", "pink", "gray"]
+
+    const menuOptions = ["File", "Edit", "View", "Image", "Options", "Help"]
 
     return (
         <div className="Paintbox-wrapper">
@@ -32,31 +24,20 @@ export const PaintBox = (props) => {
                         </div>
                     </div>
                     <div className="Notepad-menu" style={{width: 370, justifyContent: "space-evenly"}}>
-                        <div className="Notepad-menu-unselected">File</div>
-                        <div className="Notepad-menu-selected">Edit</div>
-                        <div className="Notepad-menu-unselected">View</div>
-                        <div className="Notepad-menu-unselected">Image</div>
-                        <div className="Notepad-menu-unselected">Options</div>
-                        <div className="Notepad-menu-unselected">Help</div>
+                        {menuOptions.map((o) => {
+                            return (
+                                <NotepadMenuOpt name={o} selected={o==="Edit"}/>
+                            )
+                        })}
                     </div>
                     <div className="Paintbox-body">
+                        <div className="Paintbox-selected-color" style={{background: colorMap[color]}} />
                         <div className="Paintbox-paints">
-                            <div className="Paintbox-paint" style={{
-                                background: colorMap["red"], 
-                                borderColor: color==="red" ? "white" : "black", 
-                                filter: "drop-shadow(0px 0px 6px white)"
-                            }}/>
-                            <div className="Paintbox-paint" style={{background: colorMap["red-orange"]}}/>
-                            <div className="Paintbox-paint" style={{background: colorMap["yellow-orange"]}}/>
-                            <div className="Paintbox-paint" style={{background: colorMap["yellow"]}}/>
-                            <div className="Paintbox-paint" style={{background: colorMap["yellow-green"]}}/>
-                            <div className="Paintbox-paint" style={{background: colorMap["green"]}}/>
-                            <div className="Paintbox-paint" style={{background: colorMap["blue"]}}/>
-                            <div className="Paintbox-paint" style={{background: colorMap["periwinkle"]}}/>
-                            <div className="Paintbox-paint" style={{background: colorMap["indigo"]}}/>
-                            <div className="Paintbox-paint" style={{background: colorMap["purple"]}}/>
-                            <div className="Paintbox-paint" style={{background: colorMap["pink"]}}/>
-                            <div className="Paintbox-paint" style={{background: colorMap["gray"]}}/>
+                            {colors.map((c) => {
+                                return (
+                                    <PaintBoxPaint color={c} stateColor={color} />
+                                )
+                            })}
                             <div className="Paintbox-erase" style={{}}/>
                         </div>
                         <Canvas />
