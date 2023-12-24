@@ -47,7 +47,7 @@ export const Canvas = (props) => {
                                 <div key={r} 
                                     className="Paintbox-pixel" 
                                     onMouseEnter={()=>handleMouseEnter(r, c)}
-                                    style={{background: pixelColors.has(currIndex) ? pixelColors[currIndex] : "white"}}
+                                    style={{background: pixelColors.has(currIndex) ? color : "white"}}
                                 />
                             )
                         })}
