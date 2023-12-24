@@ -3,17 +3,15 @@ import './App.css'
 
 export const Canvas = (props) => {
 
+    const cols = Array.from({ length: 120 }, (_, index) => index + 1)
+    const rows = Array.from({ length: 20 }, (_, index) => index + 1)
+
+
     const color = props.curr
 
     const [isMouseDown, setIsMouseDown] = React.useState(false)
 
-    const isMouseInsideDiv = (event, divRef) => {
-        const rect = divRef.current.getBoundingClientRect()
-        const mouseX = event.clientX - rect.left
-        const mouseY = event.clientY - rect.top
-
-        return mouseX >=0 && mouseX <= rect.width && mouseY >= 0 && mouseY < rect.height
-    }
+    const [pixelColors, setPixelColors] = React.useState(new Map())
 
     const handleMouseDown = () => {
         setIsMouseDown(true)
@@ -23,25 +21,39 @@ export const Canvas = (props) => {
         setIsMouseDown(false)
     }
 
-    const handleMouseMove = (event, divRef) => {
-        if (isMouseDown && isMouseInsideDiv(event, divRef)) {
-            console.log("Mouse Position: " + event.clientX + ", " + event.clientY)
-
-
+    const handleMouseEnter = (r, c) => {
+        if (isMouseDown) {
+            const uniqueIndex = getUniqueIndex(r, c)
+            setPixelColors((prevPixelColors) => new Map(prevPixelColors).set(uniqueIndex, color));
         }
     }
 
-    const trackedDivRef = React.useRef(null)
+    const getUniqueIndex = (r, c) => {
+        return ((0.5 * (r + c) * (r + c + 1)) + c)
+    }
 
     return (
         <div 
             className="Paintbox-canvas"
-            ref={trackedDivRef}
             onMouseDown={handleMouseDown}
             onMouseUp={handleMouseUp}
-            onMouseMove={(event) => handleMouseMove(event, trackedDivRef)}
         >
-            
+            {cols.map((c)=> {
+                return (
+                    <div key={c}>
+                        {rows.map((r)=> {
+                            const currIndex = getUniqueIndex(r, c)
+                            return (
+                                <div key={r} 
+                                    className="Paintbox-pixel" 
+                                    onMouseEnter={()=>handleMouseEnter(r, c)}
+                                    style={{background: pixelColors.has(currIndex) ? pixelColors[currIndex] : "white"}}
+                                />
+                            )
+                        })}
+                    </div>
+                )
+            })}
         </div>
     )
 }
