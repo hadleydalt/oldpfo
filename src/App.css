@@ -96,7 +96,7 @@
 
 .Paintbox-paints {
   width: 50px;
-  height: 164px;
+  height: 150px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -144,6 +144,9 @@
   height: 15px;
   border: 1.5px solid black;
   border-radius: 5px;
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 5px;
 }
 
 .Box2-wrapper {

@@ -1,17 +1,17 @@
 import React from 'react'
 import './App.css'
+import { colorMap } from './Constants'
 
 export const Canvas = (props) => {
 
     const cols = Array.from({ length: 31 }, (_, index) => index + 1)
     const rows = Array.from({ length: 16 }, (_, index) => index + 1)
 
-
-    const color = props.curr
-
     const [isMouseDown, setIsMouseDown] = React.useState(false)
 
     const [pixelColors, setPixelColors] = React.useState(new Map())
+
+    const color = colorMap[props.curr]
 
     const handleMouseDown = () => {
         setIsMouseDown(true)
@@ -32,7 +32,15 @@ export const Canvas = (props) => {
         return ((0.5 * (r + c) * (r + c + 1)) + c)
     }
 
+    const handleErase = () => {
+        setPixelColors(new Map())
+    }
+
     return (
+        <>
+        <div className="Paintbox-erase" 
+            onClick={handleErase}
+        />
         <div 
             className="Paintbox-canvas"
             onMouseDown={handleMouseDown}
@@ -55,5 +63,6 @@ export const Canvas = (props) => {
                 )
             })}
         </div>
+        </>
     )
 }
