@@ -112,13 +112,13 @@
   border: 2px solid black;
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
 }
 
 .Paintbox-pixel {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   background: blue;
 }
 
