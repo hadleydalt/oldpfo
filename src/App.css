@@ -21,7 +21,7 @@
   border: 2px solid black;
   font-family: "Silkscreen";
   background: white;
-  padding: 5px;
+  padding: 10px;
   filter: drop-shadow(1px 1px 4px black);
 }
 
@@ -30,8 +30,6 @@
   width: 100vw;
   position: absolute;
   z-index: 4;
-  border: 2px solid black;
-  font-family: "Silkscreen";
   background: black;
   opacity: 0.5;
   padding: 5px;
@@ -73,7 +71,7 @@
 
 .splash-page {
   display: flex; 
-  width: 84vw;
+  width: 80vw;
   height: 100vh;
   min-height: 658px;
   justify-content: space-between;
