@@ -46,7 +46,7 @@ export const PaintBox = (props) => {
                             })}
                             <div className="Paintbox-erase" style={{}}/>
                         </div>
-                        <Canvas />
+                        <Canvas curr={color} />
                     </div>
                 </div>
             </div>

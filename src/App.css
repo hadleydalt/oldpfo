@@ -110,6 +110,16 @@
   border-radius: 7px;
   margin-left: 2.5px;
   border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.Paintbox-pixel {
+  width: 1px;
+  height: 1px;
+  background: blue;
 }
 
 .Paintbox-selected-color {
