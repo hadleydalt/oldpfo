@@ -13,6 +13,10 @@ export const PaintBox = (props) => {
 
     const menuOptions = ["File", "Edit", "View", "Image", "Options", "Help"]
 
+    const handleClick = (c) => {
+        setColor(c)
+    }
+
     return (
         <div className="Paintbox-wrapper">
             <div className="Notepad-bg" style={{width: 400, height: 240}}>
@@ -24,18 +28,20 @@ export const PaintBox = (props) => {
                         </div>
                     </div>
                     <div className="Notepad-menu" style={{width: 370, justifyContent: "space-evenly"}}>
-                        {menuOptions.map((o) => {
+                        {menuOptions.map((o, index) => {
                             return (
-                                <NotepadMenuOpt name={o} selected={o==="Edit"}/>
+                                <NotepadMenuOpt key={index} name={o} selected={o==="Edit"}/>
                             )
                         })}
                     </div>
                     <div className="Paintbox-body">
                         <div className="Paintbox-selected-color" style={{background: colorMap[color]}} />
                         <div className="Paintbox-paints">
-                            {colors.map((c) => {
+                            {colors.map((c, index) => {
                                 return (
-                                    <PaintBoxPaint color={c} stateColor={color} />
+                                    <div onClick={() => handleClick(c)}>
+                                        <PaintBoxPaint key={index} color={c} stateColor={color} />
+                                    </div>
                                 )
                             })}
                             <div className="Paintbox-erase" style={{}}/>

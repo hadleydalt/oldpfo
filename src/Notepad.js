@@ -1,9 +1,12 @@
 import React from 'react'
 import './App.css'
+import { NotepadMenuOpt } from './NotepadMenuOpt'
 
 export const Notepad = (props) => {
     const height = props.height.toString()
     const [clicked, setClicked] = React.useState(false)
+
+    const menuOptions = ["File", "Edit", "Format", "View", "Help"]
 
     return (
         <div className="Notepad-wrapper" style={{height: String(height + "px")}}>
@@ -16,11 +19,11 @@ export const Notepad = (props) => {
                         </div>
                     </div>
                     <div className="Notepad-menu">
-                        <div className="Notepad-menu-unselected">File</div>
-                        <div className="Notepad-menu-selected">Edit</div>
-                        <div className="Notepad-menu-unselected">Format</div>
-                        <div className="Notepad-menu-unselected">View</div>
-                        <div className="Notepad-menu-unselected">Help</div>
+                        {menuOptions.map((o, index) => {
+                            return (
+                                <NotepadMenuOpt key={index} name={o} selected={o==="Edit"}/>
+                            )
+                        })}
                     </div>
                     <div 
                         className="Notepad-enter-wrapper" 
