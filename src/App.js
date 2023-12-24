@@ -9,6 +9,7 @@ import { ThreeButtons } from './ThreeButtons'
 import { Vertical } from './Vertical'
 import { Horizontal } from './Horizontal'
 import { Image } from './Image'
+import { PaintBox } from './PaintBox'
 
 function App() {
 
@@ -48,9 +49,10 @@ function App() {
               <div className="sp-col-2">
                 <Box2 height={220}/>
                 <div className="icons-container">
-                  <Image source='Papers' width={150}/>
-                  <Image source='Folder' width={150}/>
+                  <Image source='Papers' width={130}/>
+                  <Image source='Folder' width={130}/>
                 </div>
+                <PaintBox />
               </div>
               <div className="sp-col-3">
                 <Notepad height={330}/>
