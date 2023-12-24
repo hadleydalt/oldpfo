@@ -2,9 +2,39 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   width: 100vw;
   height: 100vh;
+}
+
+.larger-screen-message {
+  border: 2px solid black;
+  font-family: "Silkscreen";
+  background: white;
+  padding: 5px;
+}
+
+.height-message {
+  margin-top: 20px;
+  position: absolute;
+  z-index: 5;
+  border: 2px solid black;
+  font-family: "Silkscreen";
+  background: white;
+  padding: 5px;
+  filter: drop-shadow(1px 1px 4px black);
+}
+
+.height-message-bg {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 4;
+  border: 2px solid black;
+  font-family: "Silkscreen";
+  background: black;
+  opacity: 0.5;
+  padding: 5px;
 }
 
 .sidebar {
@@ -43,11 +73,13 @@
 
 .splash-page {
   display: flex; 
-  width: 80vw;
+  width: 84vw;
   height: 100vh;
+  min-height: 658px;
   justify-content: space-between;
   align-items: center;
   z-index: 3;
+  overflow: scroll;
 }
 
 .sp-col-1 {
@@ -58,9 +90,14 @@
   justify-content: space-between;
 }
 
+.buttons-col-1 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
 .sp-col-2 {
   height: 90vh;
-  width: 28vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -119,7 +156,6 @@
 .Paintbox-pixel {
   width: 10px;
   height: 10px;
-  background: blue;
 }
 
 .Paintbox-selected-color {
@@ -554,7 +590,9 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  position: absolute;
+  margin-top: -8px;
+  margin-left: -8px;
+  /*position: absolute;*/
 }
 
 .Box1-bg {
@@ -564,7 +602,7 @@
   border-radius: 7px;
   margin-top: 7px;
   margin-left: 7px;
-  position: absolute;
+  /*position: absolute;*/
   filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.3))
 }
 
@@ -668,7 +706,7 @@
   position: absolute;
   width: 200px;
   margin-top: -90px;
-  margin-left: 20px;
+  margin-left: -20px;
   transform: rotate(20deg);
 }
 

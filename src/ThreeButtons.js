@@ -9,7 +9,8 @@ export const ThreeButtons = (props) => {
         height: square ? 250 : 150,
         width: square ? 80 : 170,
         display: "flex",
-        flexDirection: "column"
+        flexDirection: "column",
+        marginTop: 20
     }
 
     const bgStyle = {

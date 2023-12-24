@@ -7,10 +7,9 @@ export const Box1 = (props) => {
         <div className="Box1-wrapper" style={{height: height + "px"}}>
             {props.bg && 
                 <div>
-                    <div className="Box1-bg" style={{height: String(height + "px")}}/>
-                </div>
-            }
-            <div className="Box1-exterior" style={{height: String(height + "px")}}>
+                    <div className="Box1-bg" style={{height: String(height + "px")}}>
+                    <div className="Box1-exterior" style={{height: String(height + "px")}}>
+                    {props.planet && <img src={require('./Planet.png')} alt="" className="planet" />}
                 <div className="Box1-top-wrapper">
                     <div className="box-top-text">
                         Hello
@@ -35,7 +34,9 @@ export const Box1 = (props) => {
                     </div>
                 </div>
             </div>
-            {props.planet && <img src={require('./Planet.png')} alt="" className="planet" />}
+                    </div>
+                </div>
+            }
         </div>
     )
 }
