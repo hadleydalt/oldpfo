@@ -58,6 +58,12 @@ function App() {
       <div className="first-page">
         <div className="sidebar" style={{width: width < 877 ? "100vw" : "20vw", height : width < 877 ? "10vh" : "100vh", zIndex: width < 877 ? 4 : 3}}>
           <TitleBox expanded={width < 877} />
+          <div className="sidebar-desc">
+            <div className="hi">I'm Hadley.</div>
+            <div className="small">A cross-disciplinary developer, experimental aestheticist, and lover of the details. My work is an attempt to bind the details together.</div>
+            <div className="small">I'm hoping to make an impact and use my explorations to advance medtech, facilitate communication, and generally galvanize people.</div>
+            <div className="hi2">Want to work together? Let me know at <b>hadley_dalton@brown.edu</b></div>
+          </div>
         </div>
         <div className="first-wrapper">
           <Vertical color="#EEDFB1" opacity={opacity}/>

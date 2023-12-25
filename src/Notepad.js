@@ -33,7 +33,7 @@ export const Notepad = (props) => {
                         }}
                     >
                         <div className="Notepad-cursor" style={{color: clicked ? "transparent" : "black"}}>|</div>
-                            <textarea className="Notepad-enter" style={{height: String((props.height - 80) + "px")}} name="Text1" cols="40" rows="5"></textarea>
+                            <textarea className="Notepad-enter" style={{height: String((props.height - 80) + "px"), fontFamily: "Work Sans"}} name="Text1" cols="40" rows="5"></textarea>
                     </div>
                 </div>
             </div>

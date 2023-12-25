@@ -47,6 +47,30 @@
   z-index: 3;
 }
 
+.sidebar-desc {
+  width: 88%;
+  height: 40vh;
+  font-family: "Work Sans";
+  font-size: 1.2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.small {
+  font-size: 1vw;
+}
+
+.hi {
+  font-size: 1.2vw;
+  font-family: "Libre Baskerville";
+}
+
+.hi2 {
+  font-size: 0.7vw;
+  font-family: "Libre Baskerville";
+}
+
 .first-page {
   width: 100vw;
   height: 100vh;
