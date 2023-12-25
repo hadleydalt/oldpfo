@@ -32,7 +32,11 @@ function App() {
 
   const opacity = 1.0 - (scrollPos / height)
 
-  console.log(height)
+  const squareButtonNames = ["op1", "op2", "op3"]
+  const nonSquareButtonNames =["op1", "op2", "op3"]
+
+  const squareButtons = <ThreeButtons square={true} names={squareButtonNames} />
+  const nonSquareButtons = <ThreeButtons square={false} names={nonSquareButtonNames} />
 
   return (
     <div className="App">
@@ -63,11 +67,11 @@ function App() {
                 <Box1 planet={true} bg={true} height={290}/>
                 {width < 1370 &&
                 <div className="buttons-col-1">
-                  <ThreeButtons square={false}/>
-                  <ThreeButtons square={true}/>
+                  {nonSquareButtons}
+                  {squareButtons}
                 </div>
                 }
-                {width >= 1370 && <ThreeButtons square={true}/>}
+                {width >= 1370 && squareButtons}
               </div>
               {width < 877 &&
               <div className="sp-col-1">
@@ -88,7 +92,7 @@ function App() {
               </div>}
               {width >= 1370 && <div className="sp-col-3">
                 <Notepad height={330}/>
-                <ThreeButtons square={false}/>
+                {nonSquareButtons}
               </div>}
           </div>
         </div>

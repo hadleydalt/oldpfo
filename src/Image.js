@@ -5,7 +5,7 @@ export const Image = (props) => {
 
     return (
         <div>
-            <img src={require('./' + props.source + '.png')} alt="" style={{height: "auto", width: props.width}}/>
+            <img src={require('./' + props.source + '.png')} alt="" style={{height: "auto", width: props.width}} draggable={false}/>
         </div>
     )
 }

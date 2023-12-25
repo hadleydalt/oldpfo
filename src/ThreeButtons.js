@@ -1,8 +1,10 @@
 import React from 'react'
 import './App.css'
+import { Button } from './Button'
 
 export const ThreeButtons = (props) => {
 
+    const names = props.names
     const square = props.square
 
     const wrapperStyle = {
@@ -24,40 +26,15 @@ export const ThreeButtons = (props) => {
         justifyContent: "center"
     }
 
-    const buttonStyle = {
-        width: square ? 45 : 160,
-        height: square ? 45 : 25,
-        borderBottom: square ? "12px solid gray" : "4px solid gray",
-        borderRight: square ? "12px solid lightgray" : "4px solid lightgray",
-        borderTop: square ? "12px solid #fafafa" : "4px solid #fafafa",
-        borderLeft: square ? "12px solid #E7E7E7" : "4px solid #E7E7E7",
-        borderRadius: 4,
-        fontFamily: "Silkscreen",
-        fontSize: 16,
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center"
-    }
+    const classNames = ["tb-button-normal", "tb-button", "tb-button-normal"]
 
     return (
         <div style={wrapperStyle}>
-            <div style={bgStyle}>
-                <div className="tb-button-normal" style={buttonStyle}>
-                    op1
-                </div>
-            </div>
-
-            <div style={bgStyle}>
-                <div className="tb-button" style={buttonStyle}>
-                    op
-                </div>
-            </div>
-
-            <div style={bgStyle}>
-                <div className="tb-button-normal" style={buttonStyle}>
-                    op3
-                </div>
-            </div>
+            {classNames.map((className, index) => {
+                return (
+                    <Button key={index} name={names[index]} bgStyle={bgStyle} className={className} square={square} />
+                )
+            })}
         </div>
     )
 }
