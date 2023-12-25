@@ -10,6 +10,10 @@ import { Vertical } from './Vertical'
 import { Horizontal } from './Horizontal'
 import { Image } from './Image'
 import { PaintBox } from './PaintBox'
+import { LinkedIn } from './LinkedIn'
+import { Mail } from './Mail'
+import { GitHub } from './Github'
+import { Instagram } from './Instagram'
 
 function App() {
 
@@ -59,10 +63,26 @@ function App() {
         <div className="sidebar" style={{width: width < 877 ? "100vw" : "20vw", height : width < 877 ? "10vh" : "100vh", zIndex: width < 877 ? 4 : 3}}>
           <TitleBox expanded={width < 877} />
           <div className="sidebar-desc">
-            <div className="hi">I'm Hadley.</div>
+            <div className="serif">I'm Hadley.</div>
             <div className="small">A cross-disciplinary developer, experimental aestheticist, and lover of the details. My work is an attempt to bind the details together.</div>
             <div className="small">I'm hoping to make an impact and use my explorations to advance medtech, facilitate communication, and generally galvanize people.</div>
-            <div className="hi2">Want to work together? Let me know at <b>hadley_dalton@brown.edu</b></div>
+            <div className="small-serif">Want to work together? Let me know at <b>hadley_dalton@brown.edu</b></div>
+          </div>
+          <div className="bottom-bar">
+            <div className="bottom-in">
+              <div className="sidebar-icons">
+                <LinkedIn />
+                <Mail />
+                <GitHub />
+                <Instagram />
+              </div>
+              <div className="sidebar-cp">
+                Hadley Dalton © 2023
+              </div>
+              <div className="sidebar-lastupdated">
+                Site was last updated on December 30, 2023
+              </div>
+            </div>
           </div>
         </div>
         <div className="first-wrapper">

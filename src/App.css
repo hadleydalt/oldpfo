@@ -61,14 +61,55 @@
   font-size: 1vw;
 }
 
-.hi {
+.serif {
   font-size: 1.2vw;
   font-family: "Libre Baskerville";
 }
 
-.hi2 {
+.small-serif {
   font-size: 0.7vw;
   font-family: "Libre Baskerville";
+}
+
+.bottom-bar {
+  height: 44vh;
+  width: 88%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.bottom-in {
+  display: flex;
+  height: 15vh;
+  width: 100%;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.sidebar-icons {
+  height: 24px;
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-cp {
+  height: 18px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-family: "Work Sans";
+  font-size: 1vw;
+}
+
+.sidebar-lastupdated {
+  height: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-family: "Libre Baskerville";
+  font-size: 0.5vw;
 }
 
 .first-page {
