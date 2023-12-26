@@ -99,11 +99,22 @@
   font-size: 1vw;
 }
 
+.page-option-text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .page-option-hovered {
   position: absolute;
-  background: blue;
+  background: black;
   width: 0%;
   height: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Silkscreen";
+  font-size: 1vw;
 }
 
 .bottom-in {

@@ -7,7 +7,9 @@ export const PageOption = (props) => {
   const [hovered, setHovered] = React.useState(false)
   
   const style = useSpring({
-    width: hovered ? "62%" : "0%"
+    width: hovered ? "62%" : "0%",
+    color: hovered ? "#FFF9E6" : "rgba(0,0,0,0)",
+
   })
 
   React.useEffect(() => {
@@ -23,9 +25,9 @@ export const PageOption = (props) => {
     >
         <animated.div
             className="page-option-hovered"
-            style={{ width: style.width}}
-         />
-            {props.name}
+            style={style}
+         >{props.name}</animated.div>
+            <div className="page-option-text">{props.name}</div>
     </div>
   )
 }
