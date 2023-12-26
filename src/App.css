@@ -76,6 +76,34 @@
   width: 88%;
   display: flex;
   align-items: flex-end;
+  flex-direction: column;
+}
+
+.page-nav {
+  height: 42vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.page-option {
+  height: 4vh;
+  width: 70%;
+  border: 1.5px solid black;
+  margin-top: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Silkscreen";
+  font-size: 1vw;
+}
+
+.page-option-hovered {
+  position: absolute;
+  background: blue;
+  width: 62%;
+  height: 4vh;
 }
 
 .bottom-in {
