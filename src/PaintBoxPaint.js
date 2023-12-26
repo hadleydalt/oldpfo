@@ -11,7 +11,7 @@ export const PaintBoxPaint = (props) => {
         <div className="Paintbox-paint" style={{
             background: colorMap[color], 
             borderColor: stateColor===color ? "white" : "black", 
-            filter: stateColor==color ? "drop-shadow(0px 0px 6px white)" : ""
+            filter: stateColor===color ? "drop-shadow(0px 0px 6px white)" : ""
         }}/>
     )
 }

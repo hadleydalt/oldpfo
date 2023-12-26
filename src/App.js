@@ -14,7 +14,6 @@ import { LinkedIn } from './LinkedIn'
 import { Mail } from './Mail'
 import { GitHub } from './Github'
 import { Instagram } from './Instagram'
-import { animated, useSpring } from '@react-spring/web'
 import { PageOption } from './PageOption'
 
 function App() {
@@ -22,17 +21,6 @@ function App() {
   const { height, width } = useWindowDimensions()
 
   const [scrollPos, setScrollPos] = React.useState(0)
-
-  const navStyle = useSpring({
-    from: {
-      marginLeft: "-62%",
-      width: "0%"
-    },
-    to: {
-      marginLeft: "0%",
-      width: "62%"
-    }
-  })
   
 
   const handleScroll = () => {

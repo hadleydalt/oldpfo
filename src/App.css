@@ -94,7 +94,7 @@
   margin-top: 3vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-family: "Silkscreen";
   font-size: 1vw;
 }
@@ -102,7 +102,7 @@
 .page-option-hovered {
   position: absolute;
   background: blue;
-  width: 62%;
+  width: 0%;
   height: 4vh;
 }
 

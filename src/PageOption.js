@@ -1,37 +1,30 @@
 import './App.css';
 import React from 'react'
-import { animated, useSpring } from '@react-spring/web'
+import { useSpring, animated } from '@react-spring/web'
 
 export const PageOption = (props) => {
 
   const [hovered, setHovered] = React.useState(false)
-
-  const navStyle = useSpring({
-    from: {
-      marginLeft: "-62%",
-      width: "0%"
-    },
-    to: {
-      marginLeft: "0%",
-      width: "62%"
-    }
+  
+  const style = useSpring({
+    width: hovered ? "62%" : "0%"
   })
 
-  function handleMouseEnter() {
-    setHovered(true)
-  }
-
-  function handleMouseLeave() {
-    setHovered(false)
-  }
+  React.useEffect(() => {
+    if (!hovered) {
+        return
+    }
+}, [hovered, 100])
 
   return (
-    <div className="page-option">
-        <animated.div 
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            className="page-option-hovered" 
-            style={navStyle} />
+    <div className="page-option" 
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+    >
+        <animated.div
+            className="page-option-hovered"
+            style={{ width: style.width}}
+         />
             {props.name}
     </div>
   )

@@ -1,8 +1,5 @@
 import React from 'react'
 import './App.css'
-import { Canvas } from './Canvas'
-import { PaintBoxPaint } from './PaintBoxPaint'
-import { colorMap } from './Constants'
 
 export const NotepadMenuOpt = (props) => {
 
