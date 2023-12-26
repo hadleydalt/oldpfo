@@ -151,6 +151,83 @@
   font-size: 0.5vw;
 }
 
+.previews-wrapper {
+  width: 78vw;
+  background: green;
+  overflow: scroll;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.preview-wrapper {
+  margin-top: 5vh;
+  background: skyblue;
+  height: 70vh;
+  width: 38.5vw;
+  margin-bottom: 5vh;
+}
+
+.preview-image {
+  width: 100%;
+  height: 70%;
+  border-radius: 10px;
+  background: yellow;
+}
+
+.preview-text-wrapper {
+  width: 100%;
+  background: pink;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.preview-text-date {
+  width: 100%;
+  height: 10%;
+  background: orange;
+  font-family: "Work Sans";
+  font-size: 0.9vw;
+}
+
+.preview-text-title {
+  width: 100%;
+  height: 27%;
+  background: darkseagreen;
+  font-family: "Libre Baskerville";
+  font-size: 2vw;
+}
+
+.preview-text-info-wrapper {
+  width: 100%;
+  height: 50%;
+  background: aquamarine;
+  display: flex;
+}
+
+.preview-text-info {
+  width: 50%;
+  height: 100%;
+  background: olivedrab;
+  display: flex;
+  flex-direction: column;
+  font-family: "Silkscreen";
+  font-size: 0.9vw;
+}
+
+.info {
+  font-size: 0.9vw;
+  font-family: "Work Sans";
+}
+
+.hi {
+  font-family: "Libre Baskerville";
+  font-style:italic;
+  margin-top: 1vh;
+}
+
 .first-page {
   width: 100vw;
   height: 100vh;
@@ -165,6 +242,8 @@
   z-index: 3;
   background: purple;
   align-self: flex-end;
+  display: flex;
+  justify-content: center;
 }
 
 .first-wrapper {

@@ -15,6 +15,7 @@ import { Mail } from './Mail'
 import { GitHub } from './Github'
 import { Instagram } from './Instagram'
 import { PageOption } from './PageOption'
+import { Preview } from './Preview'
 
 function App() {
 
@@ -130,8 +131,14 @@ function App() {
         </div>
       </div>
       <div className="second-page">
-        <div style={{height: '100vh', width: 200, marginTop: 50}}>
-          Testing box
+        <div className="previews-wrapper">
+          <Preview index={1} date="JANUARY 2023" title="Project Title" classInfo="Augmented Reality" skills="3D Modeling, VRChat" tools="Blender, Unity" info="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"/>
+          <Preview index={2} date="JANUARY 2023" title="Project Title" classInfo="Augmented Reality" skills="3D Modeling, VRChat" tools="Blender, Unity" info="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"/>
+          <Preview index={3} date="JANUARY 2023" title="Project Title" classInfo="Augmented Reality" skills="3D Modeling, VRChat" tools="Blender, Unity" info="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"/>
+          <Preview index={4} date="JANUARY 2023" title="Project Title" classInfo="Augmented Reality" skills="3D Modeling, VRChat" tools="Blender, Unity" info="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"/>
+          <Preview index={5} date="JANUARY 2023" title="Project Title" classInfo="Augmented Reality" skills="3D Modeling, VRChat" tools="Blender, Unity" info="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"/>
+          <Preview index={6} date="JANUARY 2023" title="Project Title" classInfo="Augmented Reality" skills="3D Modeling, VRChat" tools="Blender, Unity" info="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"/>
+          <Preview index={7} date="JANUARY 2023" title="Project Title" classInfo="Augmented Reality" skills="3D Modeling, VRChat" tools="Blender, Unity" info="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"/>
         </div>
       </div>
       </>}
