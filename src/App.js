@@ -19,7 +19,6 @@ import { PageOption } from './PageOption'
 function App() {
 
   const { height, width } = useWindowDimensions()
-
   const [scrollPos, setScrollPos] = React.useState(0)
   
 
