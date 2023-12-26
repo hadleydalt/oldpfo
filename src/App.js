@@ -65,7 +65,7 @@ function App() {
           <TitleBox expanded={width < 877} />
           <div className="sidebar-desc">
             <div className="serif">I'm Hadley.</div>
-            <div className="small">A cross-disciplinary developer, experimental aestheticist, and lover of the details. My projects are attempts to bind the details together.</div>
+            <div className="small">A cross-disciplinary developer, experimental aestheticist, and lover of the details. I design projects that enable new possibilities.</div>
             <div className="small">I'm hoping to do so in meaningful ways that make a difference in people's lives!</div>
             <div className="small-serif">Want to work together? Let me know at <b>hadley_dalton@brown.edu</b></div>
           </div>
