@@ -160,9 +160,11 @@
 }
 
 .second-page {
-  width: 100vw;
+  width: 80vw;
   background: rgba(128, 0, 128, 0.0);
   z-index: 3;
+  background: purple;
+  align-self: flex-end;
 }
 
 .first-wrapper {
