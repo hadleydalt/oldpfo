@@ -3,7 +3,7 @@ import React from 'react'
 import { useWindowDimensions } from './Functions'
 import { SplashPage } from './splash-page/SplashPage'
 import { Sidebar } from './sidebar/Sidebar'
-import { Previews } from './Previews'
+import { Previews } from './previews/Previews'
 import { Messages } from './Messages'
 
 function App() {
