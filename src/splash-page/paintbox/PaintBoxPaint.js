@@ -1,6 +1,6 @@
 import React from 'react'
-import './App.css'
-import { colorMap } from './Constants'
+import '../../css/App.css'
+import { colorMap } from '../../Constants'
 
 export const PaintBoxPaint = (props) => {
 

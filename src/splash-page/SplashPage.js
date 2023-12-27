@@ -1,7 +1,7 @@
 import React from 'react'
-import './App.css'
+import '../css/App.css'
 import { Col1, Col2, Col3 } from './Columns'
-import { Horizontal, Vertical } from './Background'
+import { Horizontal, Vertical } from '../Background'
 
 export const SplashPage = (props) => {
 

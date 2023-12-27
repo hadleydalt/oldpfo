@@ -1,8 +1,8 @@
 import React from 'react'
-import './App.css'
+import '../css/App.css';
 import { TitleBox } from './TitleBox'
 import { PageNav } from './PageNav'
-import { Instagram, LinkedIn, Mail, GitHub } from './Icons'
+import { Instagram, LinkedIn, Mail, GitHub } from '../Icons'
 
 export const Sidebar = (props) => {
 

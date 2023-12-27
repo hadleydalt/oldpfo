@@ -1,5 +1,5 @@
 import React from 'react'
-import './App.css'
+import '../../css/App.css'
 
 export const Box2 = (props) => {
 
@@ -20,9 +20,9 @@ export const Box2 = (props) => {
                         <div className="Box2-buttons-container" style={{height: String((props.height - 60) + "px")}}>
                             <div className="Box2-decor-bg">
                                 <div className="Box2-decor">
-                                    <img className="Box2-panel" src={require('./Panel.png')} alt="" draggable={false} />
-                                    <img className="Box2-planet-noring" src={require('./PlanetNoRing.png')} alt="" draggable={false}/>
-                                    <img className="Box2-planet" src={require('./Planet.png')} alt="" draggable={false}/>
+                                    <img className="Box2-panel" src={require('../../graphics/Panel.png')} alt="" draggable={false} />
+                                    <img className="Box2-planet-noring" src={require('../../graphics/PlanetNoRing.png')} alt="" draggable={false}/>
+                                    <img className="Box2-planet" src={require('../../graphics/Planet.png')} alt="" draggable={false}/>
                                 </div>
                             </div>
                             <div className="Box2-button-bg">

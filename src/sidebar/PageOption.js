@@ -1,4 +1,4 @@
-import './App.css';
+import '../css/App.css';
 import React from 'react'
 import { useSpring, animated } from '@react-spring/web'
 
@@ -16,7 +16,7 @@ export const PageOption = (props) => {
     if (!hovered) {
         return
     }
-}, [hovered, 100])
+}, [hovered])
 
   return (
     <div className="page-option" 

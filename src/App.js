@@ -1,8 +1,8 @@
-import './App.css';
+import './css/App.css';
 import React from 'react'
 import { useWindowDimensions } from './Functions'
-import { SplashPage } from './SplashPage'
-import { Sidebar } from './Sidebar'
+import { SplashPage } from './splash-page/SplashPage'
+import { Sidebar } from './sidebar/Sidebar'
 import { Previews } from './Previews'
 import { Messages } from './Messages'
 

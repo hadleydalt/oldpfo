@@ -1,13 +1,13 @@
 import React from 'react'
-import './App.css'
-import { Box1 } from './Box1'
-import { Box2 } from './Box2'
-import { Notepad } from './Notepad'
+import '../css/App.css'
+import { Box1 } from './boxes/Box1'
+import { Box2 } from './boxes/Box2'
+import { Notepad } from './notepad/Notepad'
 import { Image } from './Image'
-import { PaintBox } from './PaintBox'
-import { ThreeButtons } from './ThreeButtons'
-import { squareButtonNames } from './Constants'
-import { nonSquareButtonNames } from './Constants'
+import { PaintBox } from './paintbox/PaintBox'
+import { ThreeButtons } from './buttons/ThreeButtons'
+import { squareButtonNames } from '../Constants'
+import { nonSquareButtonNames } from '../Constants'
 
 export const Col1 = (props) => {
 
