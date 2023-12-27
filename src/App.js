@@ -3,7 +3,8 @@ import React from 'react'
 import { useWindowDimensions } from './Functions'
 import { SplashPage } from './splash-page/SplashPage'
 import { Sidebar } from './sidebar/Sidebar'
-import { Previews } from './previews/Previews'
+import { Previews } from './pages/previews/Previews'
+import { Project } from './pages/Project'
 import { Messages } from './Messages'
 
 function App() {
@@ -39,9 +40,8 @@ function App() {
             </div>
           </div>
           <div className="second-page">
-            <div className="previews-wrapper">
-              <Previews />
-            </div>
+            {/*<Previews />*/}
+            <Project />
           </div>
         </>
       }

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/App.css'
+import '../../css/App.css'
 
 export const Preview = (props) => {
     const index = props.index
@@ -13,7 +13,7 @@ export const Preview = (props) => {
 
     return (
         <div className="preview-wrapper">
-            <img className="preview-image" src={require("../graphics/" + String(index) + ".png")} alt="" style={{objectFit: "cover"}}/>
+            <img className="preview-image" src={require("../../graphics/" + String(index) + ".png")} alt="" style={{objectFit: "cover"}}/>
             <div className="preview-text-wrapper">
                 <div className="preview-text-date">
                 <b>{index + ". "} </b>{date}
