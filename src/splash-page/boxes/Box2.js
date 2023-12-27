@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../css/App.css'
+import { Button } from './Button'
 
 export const Box2 = (props) => {
 
@@ -25,11 +26,7 @@ export const Box2 = (props) => {
                                     <img className="Box2-planet" src={require('../../graphics/Planet.png')} alt="" draggable={false}/>
                                 </div>
                             </div>
-                            <div className="Box2-button-bg">
-                                <div className="Box2-button">
-                                    Continue
-                                </div>
-                            </div>
+                            <Button name="Continue" width={150} height={35}/>
                         </div>
                     </div>
                 </div>

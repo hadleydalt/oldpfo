@@ -170,7 +170,6 @@
   width: 100%;
   height: 70%;
   border-radius: 10px;
-  filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.3));
 }
 
 .preview-text-wrapper {
@@ -184,7 +183,7 @@
 .preview-text-date {
   width: 100%;
   height: 10%;
-  font-family: "Work Sans";
+  font-family: "Silkscreen";
   font-size: 0.9vw;
 }
 
@@ -221,6 +220,7 @@
   font-family: "Libre Baskerville";
   font-style:italic;
   margin-top: 1vh;
+  font-size: 1vw;
 }
 
 .first-page {
@@ -334,6 +334,7 @@
 .Paintbox-pixel {
   width: 10px;
   height: 10px;
+  cursor: pointer;
 }
 
 .Paintbox-selected-color {
@@ -351,6 +352,7 @@
   height: 20px;
   border: 1.5px solid black;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .Paintbox-erase {
@@ -367,6 +369,7 @@
   position: absolute;
   margin-top: 150px;
   margin-left: 5px;
+  cursor: pointer;
 }
 
 .Box2-wrapper {
@@ -734,30 +737,6 @@
   margin-left: 5%;
   height: 70px;
   position: absolute;
-}
-
-.Box2-button-bg {
-  width: 50%;
-  background:black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-}
-
-.Box2-button {
-  width: 92%;
-  height: 75%;
-  background: white;
-  border-bottom: 4px solid gray;
-  border-right: 4px solid lightgray;
-  border-top: 4px solid #fafafa;
-  border-left: 4px solid #E7E7E7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Silkscreen";
-  font-size: 12px;
 }
 
 .Box1-exterior {
