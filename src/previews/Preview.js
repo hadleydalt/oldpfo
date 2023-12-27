@@ -27,7 +27,7 @@ export const Preview = (props) => {
                         <div>Skills <span className="info">{skills}</span></div>
                         <div>Tools <span className="info">{tools}</span></div>
                     </div>
-                    <div className="preview-text-info">
+                    <div className="preview-text-info" style={{borderLeft: "1px solid black", paddingLeft: "0.5vw", lineHeight: "2.5vh"}}>
                         <div className="info">{info}</div>
                         <div className="hi">Click for more ➛</div>
                     </div>
