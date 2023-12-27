@@ -1,6 +1,4 @@
-export const Images = [
-    
-]
+
 export const Dates = ["DECEMBER 2023", "MAY 2021", "MAY 2023", "APRIL 2021", "AUGUST 2021", "DECEMBER 2022", "NOVEMBER 2022"]
 export const Titles = ["Cat Finder: Adventure Game", "DASH: A Web-based IDE", "Soma: The App", "Pet Garden: Productivity Game", "Design for Boston AI Labs", "Frontend Dev Projects", "Ray Tracer"]
 export const ClassInfo = [

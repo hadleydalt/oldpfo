@@ -153,7 +153,6 @@
 
 .previews-wrapper {
   width: 78vw;
-  background: green;
   overflow: scroll;
   display: flex;
   flex-wrap: wrap;
@@ -162,7 +161,6 @@
 
 .preview-wrapper {
   margin-top: 5vh;
-  background: skyblue;
   height: 70vh;
   width: 38.5vw;
   margin-bottom: 5vh;
@@ -172,12 +170,10 @@
   width: 100%;
   height: 70%;
   border-radius: 10px;
-  background: yellow;
 }
 
 .preview-text-wrapper {
   width: 100%;
-  background: pink;
   height: 30%;
   display: flex;
   flex-direction: column;
@@ -187,30 +183,28 @@
 .preview-text-date {
   width: 100%;
   height: 10%;
-  background: orange;
   font-family: "Work Sans";
   font-size: 0.9vw;
 }
 
 .preview-text-title {
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 27%;
-  background: darkseagreen;
   font-family: "Libre Baskerville";
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 .preview-text-info-wrapper {
   width: 100%;
   height: 50%;
-  background: aquamarine;
   display: flex;
 }
 
 .preview-text-info {
   width: 50%;
   height: 100%;
-  background: olivedrab;
   display: flex;
   flex-direction: column;
   font-family: "Silkscreen";
@@ -240,7 +234,6 @@
   width: 80vw;
   background: rgba(128, 0, 128, 0.0);
   z-index: 3;
-  background: purple;
   align-self: flex-end;
   display: flex;
   justify-content: center;
