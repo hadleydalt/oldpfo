@@ -13,10 +13,7 @@ export const SplashPage = (props) => {
             <Vertical color="#EEDFB1" opacity={opacity}/>
             <Horizontal color="#EEDFB1" opacity={opacity}/>
             <div className="splash-page" style={{justifyContent: width < 1370 ? "space-evenly" : "space-between", marginTop: width < 877 ? "20vh" : "0"}}>
-                <Col1 small={false} />
-                {width < 877 &&
-                    <Col1 small={true} />
-                }
+                <Col1 width = {width} />
                 {width >= 877 && <Col2 />}
                 {width >= 1370 && <Col3 />}
             </div>

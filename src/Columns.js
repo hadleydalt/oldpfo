@@ -5,37 +5,26 @@ import { Box2 } from './Box2'
 import { Notepad } from './Notepad'
 import { Image } from './Image'
 import { PaintBox } from './PaintBox'
-import { squareButtons } from './Constants'
-import { nonSquareButtons } from './Constants'
+import { ThreeButtons } from './ThreeButtons'
+import { squareButtonNames } from './Constants'
+import { nonSquareButtonNames } from './Constants'
 
 export const Col1 = (props) => {
 
     const width = props.width
-    const small = props.small
 
     return (
         <div className="sp-col-1">
-            {!small && 
                 <>
                     <Box1 planet={true} bg={true} height={290}/>
                     {width < 1370 &&
                         <div className="buttons-col-1">
-                            {nonSquareButtons}
-                            {squareButtons}
+                            <ThreeButtons square={false} names={nonSquareButtonNames} />
+                            <ThreeButtons square={true} names={squareButtonNames} />
                         </div>
                     }
-                    {width >= 1370 && squareButtons}
+                    {width >= 1370 && <ThreeButtons square={true} names={squareButtonNames} />}
                 </>
-            }
-            {small &&
-                <>
-                    <Notepad height={330}/>
-                    <div className="icons-container">
-                        <Image source='Papers' width={130}/>
-                        <Image source='Folder' width={130}/>
-                    </div>
-                </>
-            }
         </div>
     )
 }
@@ -57,7 +46,7 @@ export const Col3 = () => {
     return (
         <div className="sp-col-3">
             <Notepad height={330}/>
-            {nonSquareButtons}
+            <ThreeButtons square={false} names={nonSquareButtonNames} />
         </div>
     )
 }

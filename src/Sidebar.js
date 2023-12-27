@@ -1,11 +1,8 @@
 import React from 'react'
 import './App.css'
 import { TitleBox } from './TitleBox'
-import { PageOption } from './PageOption'
-import { LinkedIn } from './LinkedIn'
-import { Mail } from './Mail'
-import { GitHub } from './Github'
-import { Instagram } from './Instagram'
+import { PageNav } from './PageNav'
+import { Instagram, LinkedIn, Mail, GitHub } from './Icons'
 
 export const Sidebar = (props) => {
 
@@ -21,11 +18,7 @@ export const Sidebar = (props) => {
             <div className="small-serif">Want to work together? Let me know at <b>hadley_dalton@brown.edu</b></div>
           </div>
           <div className="bottom-bar">
-            <div className="page-nav">
-              <PageOption name="Home →" />
-              <PageOption name="Work →" />
-              <PageOption name="Archive →" />
-            </div>
+            <PageNav />
             <div className="bottom-in">
               <div className="sidebar-icons">
                 <LinkedIn />

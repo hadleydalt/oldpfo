@@ -1,5 +1,3 @@
-import { ThreeButtons } from './ThreeButtons'
-
 export const colorMap = {
     "red": "rgb(234, 120, 120)",
         "red-orange": "rgb(234, 160, 120)",
@@ -15,8 +13,5 @@ export const colorMap = {
         "gray": "rgb(172, 172, 172)"
 }
 
-const squareButtonNames = ["op1", "op2", "op3"]
-const nonSquareButtonNames =["op1", "op2", "op3"]
-
-export const squareButtons = <ThreeButtons square={true} names={squareButtonNames} />
-export const nonSquareButtons = <ThreeButtons square={false} names={nonSquareButtonNames} />
+export const squareButtonNames = ["op1", "op2", "op3"]
+export const nonSquareButtonNames =["op1", "op2", "op3"]
