@@ -34,6 +34,14 @@ function App() {
     setProject(num)
   }
 
+  const getLast = (curr) => {
+    return curr - 1 === -1 ? 6 : curr - 1
+  }
+  
+  const getNext = (curr) => {
+    return curr + 1 === 7 ? 0 : curr + 1
+  }
+
   return (
     <div className="App">
       <Messages width={width} height={height} />
@@ -55,7 +63,12 @@ function App() {
               })}
               </div>
             }
-            {project!==100 && <Project id={project} />}
+            {project!==100 && 
+              <Project id={project} 
+                last={() => {handleSwitch(getLast(project))}} 
+                next={() => {handleSwitch(getNext(project))}} 
+                home={() => {handleSwitch(100)}}
+              />}
           </div>
         </>
       }

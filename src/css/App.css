@@ -247,6 +247,32 @@
   font-size: 1.2vw;
 }
 
+.footer {
+  width: 100%;
+  background: yellowgreen;
+  font-family: "Silkscreen";
+  font-size: 1.2vw;
+  display: flex;
+}
+
+.footer-left {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-middle {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-right {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
+
 .project-visual {
   width: 50%;
   height: 100px;

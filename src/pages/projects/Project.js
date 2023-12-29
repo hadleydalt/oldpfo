@@ -56,6 +56,19 @@ export const Project = (props) => {
                 <div className="project-text">
                     {Text[id]}
                 </div>
+                <div className="footer"
+                    style={{cursor: "pointer"}}
+                >
+                    <div 
+                        onClick={props.last}
+                        className="footer-left">↤ Last Project</div>
+                    <div 
+                        onClick={props.home}
+                        className="footer-middle">Home</div>
+                    <div 
+                        onClick={props.next}
+                        className="footer-right">Next Project ↦</div>
+                </div>
             </div>
         </div>
     )
