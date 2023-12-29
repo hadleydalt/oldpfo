@@ -17,7 +17,7 @@ export const Project = (props) => {
 
     return (
         <div className="project-wrapper">
-            <div className="project-image"></div>
+                        <img className="project-image" src={require("../../graphics/" + String(index) + ".png")} alt="" style={{objectFit: "cover"}}/>
             <div className="preview-text-wrapper" 
                 style={{height: "50%"}}>
                 <div className="preview-text-date"

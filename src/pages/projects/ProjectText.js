@@ -53,6 +53,26 @@ export const Text = [
     </>,
 
     <>
-
+        <div className="h1">Overview</div>
+        <div>DASH is an IDE for document-based networks developed by Andy Van Dam at 
+            Brown University. I was challenged to code my own version of DASH using TypeScript, 
+            React, and SCSS, which I had no prior familiarity with. I used this challenge as an 
+            opportunity to propose some suggestions for a <span class="accent">hypothetical redesign of the existing 
+            web app</span>. </div>
+        <div className="h1">Why this redesign?</div>
+        <div>Experimenting with DASH, I noticed several features of the UI which made it difficult 
+            to navigate and use. I decided to improve upon this issues by simplifying the 
+            functionality of DASH to make it more <span className="accent">user-friendly</span>.</div>
+            <div className="h1">Defining the problem</div>
+        <div>I began by conducting an analysis of the existing web app and identifying some <span className="accent">pain 
+            points"</span> that make usability difficult. Unfortunately, the time limitations did not 
+            permit me to garner feedback about DASH from other potential users. However, if I had 
+            been given more time, I would have included this step in my analysis. </div>
+            <div style={{marginTop: "1vh"}}><span className="accent">→ Note:</span> For your understanding, DASH enables users to populate textual "notes" and files onto an unbounded 2D freeform canvas. </div>
+            <img className="project-visual" style={{height: "auto", width: "95%"}}src={require("../../graphics/dash/dash1.png")} alt=""/>
+            <div className="h1">Design Process</div>
+            <div className="accent">Design Goals</div>
+            <p>I concluded that the primary goal of this redesign should be to <b> implement the basic functionalities of DASH</b> and <b>address each of the pain points to make the app easier to navigate and use</b>.</p>
+            <p>To tackle Goal 1, I began by breaking up DASH's functionality into four components:</p>
     </>
 ]
