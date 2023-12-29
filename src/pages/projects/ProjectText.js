@@ -1,4 +1,4 @@
-import { ColVisuals } from './ColVisuals'
+import { ColVisuals } from '../ColVisuals'
 
 /*
 SAMPLE: 

@@ -1,7 +1,7 @@
 import React from 'react'
-import '../css/App.css'
+import '../../css/App.css'
 import { Text } from './ProjectText'
-import { Dates, Titles, ClassInfo, Skills, Tools, Info } from './previews/WorkInfo'
+import { Dates, Titles, ClassInfo, Skills, Tools, Info } from '../previews/WorkInfo'
 
 export const Project = (props) => {
     const id = props.id
@@ -26,7 +26,7 @@ export const Project = (props) => {
                         display: "flex", 
                         alignItems: "flex-end"
                     }}
-                ><b>{index}. </b>{date}</div>
+                ><b>{index + ". "} </b>{date}</div>
                 <div className="preview-text-title"
                     style={{
                         fontSize: "2.5vw",
