@@ -153,7 +153,6 @@
 
 .project-wrapper {
   width: 78vw;
-  background: purple;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -220,7 +219,6 @@
 }
 
 .project-text {
-  background: indianred;
   width: 100%;
   font-family: "Work Sans";
   font-size: 1vw;
@@ -249,7 +247,6 @@
 
 .footer {
   width: 100%;
-  background: yellowgreen;
   font-family: "Silkscreen";
   font-size: 1.2vw;
   display: flex;
@@ -292,7 +289,6 @@
   display: flex;
   margin-top: 2vh;
   width: 100%;
-  background: darkred;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -305,7 +301,6 @@
 }
 
 .col-visual-desc {
-  background: lightskyblue;
   width: 50%;
   height: 40vh;
   display: flex;

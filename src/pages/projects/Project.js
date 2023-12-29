@@ -18,7 +18,7 @@ export const Project = (props) => {
     return (
         <div className="project-wrapper">
             <div className="footer"
-                    style={{cursor: "pointer"}}
+                    style={{cursor: "pointer", marginTop: "2vh"}}
                 >
                     <div 
                         onClick={props.last}
@@ -70,7 +70,7 @@ export const Project = (props) => {
                     {Text[id]}
                 </div>
                 <div className="footer"
-                    style={{cursor: "pointer"}}
+                    style={{cursor: "pointer", marginBottom: "2vh"}}
                 >
                     <div 
                         onClick={props.last}
