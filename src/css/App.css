@@ -229,12 +229,15 @@
   font-size: 1vw;
   display: flex;
   flex-direction: column;
+  padding-bottom: 10vh;
 }
 
 .h1 {
+  margin-top: 5vh;
   font-family: "Libre Baskerville";
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   font-style: italic;
+  padding-bottom: 1vh;
 }
 
 .accent {

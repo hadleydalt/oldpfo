@@ -9,10 +9,9 @@ export const Previews = (props) => {
       <div className="previews-wrapper">
       {Dates.map((date, index) => {
         return (
-          <Preview index={index + 1} date={date} title={Titles[index]} classInfo={ClassInfo[index]} skills={Skills[index]} tools={Tools[index]} info={Info[index]} />
+          <Preview index={index + 1} date={date} title={Titles[index]} classInfo={ClassInfo[index]} skills={Skills[index]} tools={Tools[index]} info={Info[index]} handleSwitch={props.handleSwitch(index + 1)} />
         )
       })}
-
       </div>
     )
 }

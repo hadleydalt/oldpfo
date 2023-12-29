@@ -29,7 +29,17 @@ export const Preview = (props) => {
                     </div>
                     <div className="preview-text-info" style={{borderLeft: "1px solid black", paddingLeft: "0.5vw", lineHeight: "2.5vh"}}>
                         <div className="info">{info}</div>
-                        <div className="hi">Click for more ➛</div>
+                        <button
+                            onClick={props.handleSwitch}
+                            style={{
+                                background: "transparent",
+                                border: "0",
+                                textAlign: "left",
+                                cursor: "pointer"
+                            }}
+                        >
+                            <div className="hi">Click for more ➛</div>
+                        </button>
                     </div>
                 </div>
             </div>

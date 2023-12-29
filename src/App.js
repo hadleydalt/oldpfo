@@ -3,14 +3,16 @@ import React from 'react'
 import { useWindowDimensions } from './Functions'
 import { SplashPage } from './splash-page/SplashPage'
 import { Sidebar } from './sidebar/Sidebar'
-import { Previews } from './pages/previews/Previews'
 import { Project } from './pages/Project'
+import { Preview } from './pages/previews/Preview'
+import { Dates, Titles, ClassInfo, Skills, Tools, Info } from './pages/previews/WorkInfo'
 import { Messages } from './Messages'
 
 function App() {
 
   const { height, width } = useWindowDimensions()
   const [scrollPos, setScrollPos] = React.useState(0)
+  const [project, setProject] = React.useState(100)
   
 
   const handleScroll = () => {
@@ -28,6 +30,10 @@ function App() {
 
   const opacity = 1.0 - (scrollPos / height)
 
+  function handleSwitch(num) {
+    setProject(num)
+  }
+
   return (
     <div className="App">
       <Messages width={width} height={height} />
@@ -40,8 +46,16 @@ function App() {
             </div>
           </div>
           <div className="second-page">
-            {/*<Previews />*/}
-            <Project />
+            {project===100 && 
+              <div className="previews-wrapper">
+              {Dates.map((date, index) => {
+                return (
+                  <Preview index={index + 1} date={date} title={Titles[index]} classInfo={ClassInfo[index]} skills={Skills[index]} tools={Tools[index]} info={Info[index]} handleSwitch={() => {handleSwitch(index)}} />
+                )
+              })}
+              </div>
+            }
+            {project!==100 && <Project id={project} />}
           </div>
         </>
       }
