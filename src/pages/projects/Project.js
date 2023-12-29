@@ -17,6 +17,19 @@ export const Project = (props) => {
 
     return (
         <div className="project-wrapper">
+            <div className="footer"
+                    style={{cursor: "pointer"}}
+                >
+                    <div 
+                        onClick={props.last}
+                        className="footer-left">↤ Last Project</div>
+                    <div 
+                        onClick={props.home}
+                        className="footer-middle">Home</div>
+                    <div 
+                        onClick={props.next}
+                        className="footer-right">Next Project ↦</div>
+                </div>
                         <img className="project-image" src={require("../../graphics/" + String(index) + ".png")} alt="" style={{objectFit: "cover"}}/>
             <div className="preview-text-wrapper" 
                 style={{height: "50%"}}>

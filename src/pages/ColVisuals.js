@@ -13,9 +13,11 @@ export const ColVisuals = (props) => {
             {titles.map((title, index) => {
                 return (
                     <div key={index} className="col-visual-unit">
-                        <video className="col-visual-image" controls>
+                        {props.video && <video className="col-visual-image" controls>
                             <source src={require("../graphics/dash/" + images[index] + suffix)} type="video/mp4" style={{objectFit: "cover"}} />
-                        </video>
+                        </video>}
+                        {!props.video && <img className="col-visual-image" src={require("../graphics/dash/" + images[index] + suffix)} alt=""></img>
+                        }
                         <div className="col-visual-desc">
                             <div className="h2">{title}</div>
                             {descs[index]}
