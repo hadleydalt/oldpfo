@@ -11,6 +11,14 @@ SAMPLE:
     </>,
 */ 
 
+const dashTitles = ["Create Notes, Move and Resize", "Create Collections and Nested Collections", "Linking Notes Together"]
+const dashDescs = [
+    "The user is able to populate the screen with 'notes' onto which they can add text, images, videos, or support HTML iFrames (websites with clickable links). ", 
+    "The user can also create collections to store additional notes. Collections may be nested inside collections. ", 
+    "Finally, the user can link notes by creating and naming 'Folders' which store up to three notes. If a note has been added to a folder, the user has the option to click on and access the other contents that have been stored within that folder."
+]
+const dashImages= ["dash9", "dash10", "dash11"]
+
 export const Text = [
     
     <>
@@ -74,5 +82,25 @@ export const Text = [
             <div className="accent">Design Goals</div>
             <p>I concluded that the primary goal of this redesign should be to <b> implement the basic functionalities of DASH</b> and <b>address each of the pain points to make the app easier to navigate and use</b>.</p>
             <p>To tackle Goal 1, I began by breaking up DASH's functionality into four components:</p>
+            <img className="project-visual" style={{height: "auto", width: "45%"}}src={require("../../graphics/dash/dash2.png")} alt=""/>
+            <p>To address Goal 2, I first created an affinity diagram to map each pain point with its potential solutions.</p>
+            <img className="project-visual" style={{height: "auto", width: "95%"}}src={require("../../graphics/dash/dash3.png")} alt=""/>
+            <p className="accent">Wireframe and Prototype</p>
+            <div>Synthesizing my findings, I proceeded to make a wireframe sketch that integrated the 
+                four goal functionalities of DASH while also addressing the pain points.</div>
+            <img className="project-visual" style={{height: "auto", width: "75%"}}src={require("../../graphics/dash/dash4.png")} alt=""/>
+            <p>I then transferred the sketch to a prototype in Figma...</p>
+            <img className="project-visual" style={{height: "auto", width: "75%"}}src={require("../../graphics/dash/dash5.png")} alt=""/>
+            <p>The next step was to code the functional web app using React, TypeScript, and SCSS.</p>
+        <div className="h1">The final result</div> 
+        <div>These are some screenshots of the final result, and a diagram highlighting how my solution aims to amend to the usability issues posed by the original DASH.</div>
+        <p className="accent">Screenshot of result</p>
+        <img className="project-visual" style={{height: "auto", width: "95%"}}src={require("../../graphics/dash/dash6.png")} alt=""/>
+        <p className="accent">Diagram of Solution and Functionalities</p>
+        <img className="project-visual" style={{height: "auto", width: "95%"}}src={require("../../graphics/dash/dash7.png")} alt=""/>
+        <img className="project-visual" style={{height: "auto", width: "95%"}}src={require("../../graphics/dash/dash8.png")} alt=""/>
+        <p className="accent">Video Tours of The Result</p>
+        <ColVisuals titles={dashTitles} descs={dashDescs} images={dashImages} video={true} />
+        <div className="h1">Live interactive demo coming soon! <span className="accent" style={{fontStyle: "normal"}}>Github: <a style={{color: "black", textDecoration: "none", fontFamily: "Work Sans"}} href="http://github.com/hadleydalt/DASH-project.git">http://github.com/hadleydalt/DASH-project.git</a></span></div>
     </>
 ]

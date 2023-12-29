@@ -3,15 +3,19 @@ import '../css/App.css'
 
 export const ColVisuals = (props) => {
 
-    const titles = ["Title 1", "Title 2", "Title 3"]
-    const descs = ["Desc 1", "Desc 2", "Desc 3"]
+    const titles = props.titles
+    const descs = props.descs
+    const images = props.images
+    const suffix = props.video ? ".mp4" : ".png"
 
     return (
         <div className="col-visual-wrapper">
             {titles.map((title, index) => {
                 return (
                     <div key={index} className="col-visual-unit">
-                        <div className="col-visual-image"></div>
+                        <video className="col-visual-image" controls>
+                            <source src={require("../graphics/dash/" + images[index] + suffix)} type="video/mp4" style={{objectFit: "cover"}} />
+                        </video>
                         <div className="col-visual-desc">
                             <div className="h2">{title}</div>
                             {descs[index]}
