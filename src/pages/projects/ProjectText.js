@@ -278,5 +278,27 @@ export const Text = [
     <div className="h1">GitHub</div>
     <div>GitHub Link: <a style={{color: "black"}} href="http://github.com/sadunicorn777">http://github.com/sadunicorn777</a></div>
     <div>Please disregard the silly name of the repo, the class required me to choose an adjective, animal, and three-digit number.</div>
+    </>,
+
+    <>
+    <div className="h1">Overview</div>
+    <div>For <span className="accent">CSCI 1230: Intro to Computer Graphics</span> at Brown University, I: </div>
+    <p>Implemented ray tracer in C++ which
+        <div>→ Parses tree-based scene representations into vector-based "primitive" data</div>
+        <div>→ Projects a ray to calculate intersection points with scene "primitives"</div>
+        <div>→ Invokes a Phong lighting model to color each pixel of an image based on the material properties of each primitive. </div>
+        <div>→ Simulates shadows, reflections, and textures in the scene. </div></p>
+    <div className="h1">Scenes Created by the Ray Tracer</div>
+    <div>Reading in simple <span className="accent">.xml</span> files, the ray tracer parses location, size, and material data to create scenes, simulating light, shadow, and texture.</div>
+    <div className="photo-collection">
+        <img className="project-visual" style={{height: "auto", width: "40%"}}src={require("../../graphics/raytracer/rt1.png")} alt=""/>
+        <img className="project-visual" style={{height: "auto", width: "40%"}}src={require("../../graphics/raytracer/rt2.png")} alt=""/>
+        <img className="project-visual" style={{height: "auto", width: "40%"}}src={require("../../graphics/raytracer/rt3.png")} alt=""/>
+        <img className="project-visual" style={{height: "auto", width: "40%"}}src={require("../../graphics/raytracer/rt4.png")} alt=""/>
+    </div>
+    <div className="h1">Bonus!</div>
+    <div>I created an original Scenefile. This is the output produced by my Ray Tracer:</div>
+    <img className="project-visual" style={{height: "auto", width: "75%"}}src={require("../../graphics/raytracer/rt5.jpg")} alt=""/>
+    <p>If you're curious what the code looks like, here's the link: <a style={{color: "black"}} href="https://github.com/hadleydalt/myscenefile/blob/main/myscenefile.xml">https://github.com/hadleydalt/myscenefile/blob/main/myscenefile.xml</a></p>
     </>
 ]
