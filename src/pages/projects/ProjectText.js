@@ -248,29 +248,34 @@ export const Text = [
     <>
     <div className="h1">Overview</div>
     <div>For <span className="accent">CSCI 1300: User Interfaces and User Experiences</span> at Brown University, I: </div>
-    <p>Completed 5 assignments. For each assignment, I coded a website in React and JavaScript that showcases the assignment. The assignments were <span className="accent">Personas and Storyboarding</span>, <span className="accent">Responsive Redesign</span>, <span className="accent">Iterative Design</span>, <span className="accent">Development</span>, and <span className="accent">Final Portfolio</span>.</p>
+    <p>Completed 5 assignments. For each assignment, I <b>coded a website in React and JavaScript</b> that showcases the assignment. The assignments were
+        <div>→ Personas and Storyboarding</div>
+        <div>→ Responsive Redesign</div>
+        <div>→ Iterative Design </div>
+        <div>→ Development </div>
+        <div>→ Final Portfolio </div></p>
 
-    <div className="h1" style={{fontSize: "1.1vw"}}>→ Personas and Storyboarding</div>
+    <div className="h1">Personas and Storyboarding</div>
     <div>Step into a user's shoes by observing real users interacting with a chosen interface (this can be any interface; it doesn't need to be digital). <b>Interview</b> thee individuals about their experiences, <b>create</b> personas based on these users, and <b>illustrate</b> a storyboard for one of the personas.</div>
     <a href="https://sadunicorn777.github.io/personas-and-storyboarding/" className="click-to-view">Click to view the website →</a>
     <img className="project-visual" style={{height: "auto", width: "95%"}}src={require("../../graphics/fr/fr2.png")} alt=""/>
     
-    <div className="h1" style={{fontSize: "1.1vw"}}>→ Responsive Redesign</div>
+    <div className="h1">Responsive Redesign</div>
     <div>Practice the workflow of redesigning a simple website. <b>Analyze and identify</b> flaws in an existing interface, <b>create</b> low-fidelity and high-fidelity prototypes for various screen sizes, and <b>build</b> a responsive website based on those prototypes.</div>
     <a href="https://sadunicorn777.github.io/rr/" className="click-to-view">Click to view the website →</a>
     <img className="project-visual" style={{height: "auto", width: "95%"}}src={require("../../graphics/fr/fr3.png")} alt=""/>
 
-    <div className="h1" style={{fontSize: "1.1vw"}}>→ Iterative Design</div>
+    <div className="h1">Iterative Design</div>
     <div>In a group of four, <b>design</b> an interactive interface for an emerging startup. <b>Mockup</b> a solution to the startup's concept, <b>conduct</b> user testing, <b>consolidate</b> feedback and <b>develop</b> a final prototype.</div>
     <a href="https://rockyraccoon111.github.io/uiux-assign4/" className="click-to-view">Click to view the website →</a>
     <img className="project-visual" style={{height: "auto", width: "95%"}}src={require("../../graphics/fr/fr4.png")} alt=""/>
 
-    <div className="h1" style={{fontSize: "1.1vw"}}>→ Development</div>
+    <div className="h1">Development</div>
     <div><b>Develop</b> an interactive interface using interface components, and <b>tie</b> the components to an internal data state. <b>Create</b> a list-based interface in React which allows users to <b>select</b> items out of a list, and then <b>aggregates</b> them.</div>
     <a href="https://sadunicorn777.github.io/dev/" className="click-to-view">Click to view the website →</a>
     <img className="project-visual" style={{height: "auto", width: "95%"}}src={require("../../graphics/fr/fr5.png")} alt=""/>
 
-    <div className="h1" style={{fontSize: "1.1vw"}}>→ Final Portfolio</div>
+    <div className="h1">Final Portfolio</div>
     <div><b>Develop</b> a portfolio in React that showcases your work from this class! <b>Choose</b> 4 assignments to showcase, one may be a UX-related project from another context.</div>
     <a href="https://sadunicorn777.github.io/portfolio/" className="click-to-view">Click to view the website →</a>
     <img className="project-visual" style={{height: "auto", width: "35%"}}src={require("../../graphics/fr/fr1.gif")} alt=""/>
