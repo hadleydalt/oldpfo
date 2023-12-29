@@ -17,7 +17,11 @@ const dashDescs = [
     "The user can also create collections to store additional notes. Collections may be nested inside collections. ", 
     "Finally, the user can link notes by creating and naming 'Folders' which store up to three notes. If a note has been added to a folder, the user has the option to click on and access the other contents that have been stored within that folder."
 ]
-const dashImages= ["dash9", "dash10", "dash11"]
+const dashImages= ["dash/dash9", "dash/dash10", "dash/dash11"]
+
+const pgTitles = ["Your Pets", "Be Productive"]
+const pgDescs = ["Name pets and view their randomly generated characteristics", "Enter hours of productivity in exchange for currency which you can use to shop for pets"]
+const pgImages = ["petgarden/petg1", "petgarden/petg2"]
 
 export const Text = [
     
@@ -155,5 +159,55 @@ export const Text = [
             informed design decisions to bring the specificities to life. During these processes, 
             I prioritized user accessibility while also paying homage to the trademark appearance of 
             the app.</p>
+    </>,
+
+    <>
+        <div className="h1">Overview</div>
+        <div>I designed and coded an original game in Java for a class project. The game provides 
+            users with an addictive incentive to study! </div>
+        <p>The premise of the game is that the user can log hours of productivity in exchange for 
+            currency which can be used to purchase pets, pet toys, and extra features. The pets and 
+            toys are then placed into a garden which the user can customize. </p>
+        <div className="h1">Design Process</div>
+        <p>Because this project was more a test of my coding skills than of my User Research skills, 
+            I did not conduct any research prior to designing this project. If I could redo my 
+            process, I would go about this by:​​​​​​​</p>
+        <p className="accent"><b>1. </b>Conducting a survey geared towards people from elementary-school age to adulthood, because I feel that this game is potentially appealing to a broad age range. </p>
+        <div><b>Survey questions would include:</b></div>
+        <p>
+        <div>1. Do you feel satisfied with your average productivity level? </div>
+<div>2. Have you tried any means of boosting your productivity level? (Apps, lifestyle changes, etc.) What are they? Did any of them work? If so, why do you think they worked? </div>
+<div>3. Do you feel addicted to any games? If so, what do you think is addicting about them? Why do you prefer them over other games?</div>
+<div>4. Would you be interested in using a game which would enable you to track your hours of productivity in exchange for rewards? </div>
+<div>5. Would you be interested owning virtual pets and creating a customizable virtual environment for these pets to live in?</div>
+<div>6. Have you ever played such a game? What has been your experience with it? </div>
+        </p>
+        <p className="accent"><b>2.</b> Synthesizing survey results and using an affinity diagram to map responses.</p>
+        <div><b>The results of this survey would allow me insight into:</b></div>
+        <p>
+        <div>1. Which demographics are more affected by a dissatisfaction with their productivity level </div>
+        <div>2. Trends in productivity-boosting tactics which have been effective for consumers, that could be implemented into my game</div>
+        <div>3. Trends in gamification and other elements that make games addicting to consumers</div>
+        <div>4, 5, 6. Which demographics (if any) might be interested in the premise of the game</div>
+        </p>
+        <div>I would create an affinity diagram to map the responses to determine which tactics I 
+            could implement in my game to maximize productivity and addictiveness. </div>
+        <p className="accent"><b>3. </b>Wireframing and Prototyping</p>
+        <div>I coded the UI for Pet Garden off the top of my head with no design planning. If I 
+            could redo this, I would use wireframe sketches and Figma prototypes to devise the best 
+            possible design!</div>
+        <div className="h1">What it looks like</div>
+        <img className="project-visual" 
+            style={{height: "auto", width: "55%"}}
+            src={require("../../graphics/petgarden/petgarden.gif")} 
+            alt="" />
+        <div className="h1">Full Demo</div>
+        <video style={{width: "95%", height: "auto"}} className="project-visual" controls>
+            <source src={require("../../graphics/petgarden/petgarden.mp4")} type="video/mp4" style={{objectFit: "cover"}} />
+        </video>
+        <div className="h1">How it works</div>
+        <ColVisuals titles={pgTitles} descs={pgDescs} images={pgImages} video={false} />
+        <p><span className="accent">Github: </span> <a style={{color: "black", textDecoration: "none", fontFamily: "Work Sans"}} href="http://github.com/hadleydalt/Pet-Garden-Original-Game">http://github.com/hadleydalt/Pet-Garden-Original-Game</a></p>
+        <p><span className="accent">Extended User Guide: </span>  <a style={{color: "black", textDecoration: "none", fontFamily: "Work Sans"}} href="https://docs.google.com/document/d/1m_1gO6dKCQhSIOTCUyGH6tWd5Uil2Byv7RXS9LrzWdE/edit?usp=sharing">https://docs.google.com/document/d/1m_1gO6dKCQhSIOTCUyGH6tWd5Uil2Byv7RXS9LrzWdE/edit?usp=sharing</a></p>
     </>
 ]
