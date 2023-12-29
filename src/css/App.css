@@ -277,6 +277,7 @@
   background: seagreen;
   align-self: center;
   margin-top: 2vh;
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.3));
 }
 
 .col-visual-wrapper {
@@ -306,6 +307,16 @@
   justify-content: center;
   display: flex;
   flex-direction: column;
+}
+
+.click-to-view {
+  font-family: "Work Sans";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9vw;
+  padding-top: 1vh;
+  text-decoration: none;
+  color: black;
 }
 
 .dual {
