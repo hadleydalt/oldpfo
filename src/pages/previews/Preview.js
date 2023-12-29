@@ -13,7 +13,7 @@ export const Preview = (props) => {
 
     return (
         <div className="preview-wrapper">
-            <img className="preview-image" src={require("../../graphics/" + String(index) + ".png")} alt="" style={{objectFit: "cover"}}/>
+            <img className="preview-image" src={require("../../graphics/previews/" + String(index) + ".png")} alt="" style={{objectFit: "cover"}}/>
             <div className="preview-text-wrapper">
                 <div className="preview-text-date">
                 <b>{index + ". "} </b>{date}

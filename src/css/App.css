@@ -294,7 +294,6 @@
 }
 
 .col-visual-image {
-  background: orange;
   width: 40%;
   height: 40vh;
   border-radius: 10px;
@@ -307,6 +306,16 @@
   justify-content: center;
   display: flex;
   flex-direction: column;
+}
+
+.dual {
+  margin-top: 2vh;
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+  align-items: center;
 }
 
 .preview-text-info {

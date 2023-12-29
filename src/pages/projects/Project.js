@@ -30,7 +30,7 @@ export const Project = (props) => {
                         onClick={props.next}
                         className="footer-right">Next Project ↦</div>
                 </div>
-                        <img className="project-image" src={require("../../graphics/" + String(index) + ".png")} alt="" style={{objectFit: "cover"}}/>
+                        <img className="project-image" src={require("../../graphics/previews/" + String(index) + ".png")} alt="" style={{objectFit: "cover"}}/>
             <div className="preview-text-wrapper" 
                 style={{height: "50%"}}>
                 <div className="preview-text-date"

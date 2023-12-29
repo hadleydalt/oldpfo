@@ -1,15 +1,4 @@
-import { ColVisuals } from '../ColVisuals'
-
-/*
-SAMPLE: 
-
-<>
-        <div className="h1">Hello</div>
-        <div>HI difj difj idfj fj <span className="accent">hi</span> dkfj</div>
-        <div className="project-visual"></div>
-        <ColVisuals />
-    </>,
-*/ 
+import { ColVisuals } from '../ColVisuals' 
 
 const dashTitles = ["Create Notes, Move and Resize", "Create Collections and Nested Collections", "Linking Notes Together"]
 const dashDescs = [
@@ -84,8 +73,12 @@ export const Text = [
             <img className="project-visual" style={{height: "auto", width: "95%"}}src={require("../../graphics/dash/dash1.png")} alt=""/>
             <div className="h1">Design Process</div>
             <div className="accent">Design Goals</div>
-            <p>I concluded that the primary goal of this redesign should be to <b> implement the basic functionalities of DASH</b> and <b>address each of the pain points to make the app easier to navigate and use</b>.</p>
-            <p>To tackle Goal 1, I began by breaking up DASH's functionality into four components:</p>
+            <p>I concluded that the primary goal of this redesign should be to</p>
+            <div className="dual">
+                <div style={{width: "30%", textAlign: "center"}}>Implement the <span className="accent">basic functionalities</span> of DASH</div>
+                <div style={{width: "30%", textAlign: "center"}}>Address each of the pain points to make the app <span className="accent">easier to navigate and use</span>.</div>
+            </div>
+        <p>To tackle Goal 1, I began by breaking up DASH's functionality into four components:</p>
             <img className="project-visual" style={{height: "auto", width: "45%"}}src={require("../../graphics/dash/dash2.png")} alt=""/>
             <p>To address Goal 2, I first created an affinity diagram to map each pain point with its potential solutions.</p>
             <img className="project-visual" style={{height: "auto", width: "95%"}}src={require("../../graphics/dash/dash3.png")} alt=""/>
@@ -209,5 +202,46 @@ export const Text = [
         <ColVisuals titles={pgTitles} descs={pgDescs} images={pgImages} video={false} />
         <p><span className="accent">Github: </span> <a style={{color: "black", textDecoration: "none", fontFamily: "Work Sans"}} href="http://github.com/hadleydalt/Pet-Garden-Original-Game">http://github.com/hadleydalt/Pet-Garden-Original-Game</a></p>
         <p><span className="accent">Extended User Guide: </span>  <a style={{color: "black", textDecoration: "none", fontFamily: "Work Sans"}} href="https://docs.google.com/document/d/1m_1gO6dKCQhSIOTCUyGH6tWd5Uil2Byv7RXS9LrzWdE/edit?usp=sharing">https://docs.google.com/document/d/1m_1gO6dKCQhSIOTCUyGH6tWd5Uil2Byv7RXS9LrzWdE/edit?usp=sharing</a></p>
+    </>,
+
+    <>
+        <div className="h1">Overview</div>
+        <div>A design for the pilot website of Boston AI Labs: a startup company that designs
+             AI technology to detect and combat Retinopathy of Prematurity in newborn infants. 
+             This disease, dubbed ROP, is one of the leading causes of blindness in newborn 
+             infants.</div>
+        <div className="h1">My Task</div>
+        <div>I was contacted by Degang Wang of Boston AI Labs to design their website from 
+            scratch, as the company did not use a website at the time. </div>
+        <p>I was given very few guidelines, the only requirement being that the company's 
+            solution to ROP is clearly advertised. I was given numerous numerous resources 
+            from which to cull for information about ROP.</p>
+        <div className="h1">Design Goals</div>
+        <div>I concluded that the primary goals of this project should be: </div>
+        <div className="dual">
+            <div style={{width: "30%", textAlign: "center"}}>Given <span className="accent">verbose blocks of information</span> about the disease, display them to the reader in a <span className="accent">condensed, easily digestible</span> format.</div>
+            <div style={{width: "30%", textAlign: "center"}}>Allow the company's solution to ROP to be <span className="accent">clearly presented</span> to the reader.</div>
+        </div>
+        <div className="h1">Design Process</div>
+        <div>I decided to approach these goals by conducting a <span className="accent">competitive analysis</span> of the 
+            websites associated with prominent medical companies, and creating a table to 
+            gauge the features employed by the websites to: </div>
+        <div className="dual">
+            <div style={{width: "30%", textAlign: "center"}}>Present the <span className="accent">medical problem</span> that the company aims to combat </div>
+            <div style={{width: "30%", textAlign: "center"}}>Present and market the <span className="accent">company's solution</span> to the problem</div>
+        </div>
+        <div className="h1" style={{fontSize: "1.1vw"}}>→ Competitive analysis</div>
+        <div>I investigated the websites of similar companies who are also developing medical AI solutions for eye diseases. I then synthesized my investigation into a table of key features. </div>
+        <p>This abbreviated table consists of features found in at least 2 of the 3 websites. </p>
+        <img className="project-visual" style={{height: "auto", width: "95%"}}src={require("../../graphics/boston/boston1.png")} alt=""/>
+        <div><span className="accent">Note: </span>The websites referenced are <a style={{color: "black"}} href="https://www.eyenuk.com/us-en/">EYENUK</a>, <a style={{color: "black"}} href="https://www.digitaldiagnostics.com/products/eye-disease/lumineticscore/">Digital Diagnostics</a>, and <a style={{color: "black"}} href="https://www.pr3vent.com/website/index.php">PR3VENT</a>.</div>
+        <div className="h1" style={{fontSize: "1.1vw"}}>→ Wireframe</div>
+        <div>With these key features in mind, I then proceeded to create a wireframe sketch integrating the key features while presenting the problem of ROP alongside the Boston AI Labs solution. </div>
+        <img className="project-visual" style={{height: "auto", width: "45%"}}src={require("../../graphics/boston/boston2.png")} alt=""/>
+        <div className="h1" style={{fontSize: "1.1vw"}}>→ Prototypes and conclusion</div>
+        <div>Through further discussion, we were then able to devise low and high fidelity prototypes. To bring the prototypes to life, we settled on a simple blue color scheme to match the logo of Boston AI Labs. </div>
+        <p><span className="accent">View the Low and High Fidelity Prototypes here: </span> <a style={{color: "black"}} href="http://www.figma.com/file/21ZptbJH7dX5l1kgMW9c1Q/Boston-AI-Labs-Website-Design">http://www.figma.com/file/21ZptbJH7dX5l1kgMW9c1Q/Boston-AI-Labs-Website-Design</a></p>
+        <div><span className="accent">Note: </span> Use the "Pages" menu to alternate between prototypes: </div>
+        <img className="project-visual" style={{height: "auto", width: "35%"}}src={require("../../graphics/boston/boston3.png")} alt=""/>
     </>
 ]
