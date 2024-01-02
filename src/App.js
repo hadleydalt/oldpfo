@@ -30,8 +30,16 @@ function App() {
 
   const opacity = 1.0 - (scrollPos / height)
 
-  function handleSwitch(num) {
+  function handleSwitch(num, scroll) {
     setProject(num)
+    if (scroll) {
+      window.scrollTo({top: height, behavior: "smooth"})
+    }
+  }
+
+  function handleSwitchWithScroll(num) {
+    setProject(num)
+    window.scrollTo({top: height, behavior: "smooth"})
   }
 
   const getLast = (curr) => {
@@ -48,7 +56,7 @@ function App() {
       {width >= 500 &&
         <>
           <div className="first-page">
-            <Sidebar width={width} />
+            <Sidebar width={width} handleSwitch={() => {handleSwitchWithScroll(100)}}/>
             <div className="splash-page-wrapper">
               <SplashPage width={width} opacity={opacity} />
             </div>
@@ -66,9 +74,9 @@ function App() {
             }
             {project!==100 && 
               <Project id={project} 
-                last={() => {handleSwitch(getLast(project))}} 
-                next={() => {handleSwitch(getNext(project))}} 
-                home={() => {handleSwitch(100)}}
+                last={() => {handleSwitch(getLast(project), false)}} 
+                next={() => {handleSwitch(getNext(project), false)}} 
+                home={() => {handleSwitch(100, false)}}
               />}
           </div>
         </>

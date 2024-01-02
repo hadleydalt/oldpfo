@@ -1,10 +1,16 @@
 import '../css/App.css';
-import React from 'react'
+import { useEffect, useState } from 'react'
 import { useSpring, animated } from '@react-spring/web'
+import { useWindowDimensions } from '../Functions'
 
 export const PageOption = (props) => {
 
-  const [hovered, setHovered] = React.useState(false)
+  const [hovered, setHovered] = useState(false)
+
+  /*const handleScrollToTop = () => {
+    props.handleSwitch
+    window.scrollTo({top: height, behavior: "smooth"})
+  } */
   
   const style = useSpring({
     width: hovered ? "62%" : "0%",
@@ -12,21 +18,19 @@ export const PageOption = (props) => {
 
   })
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (!hovered) {
         return
     }
 }, [hovered])
 
   return (
-    <a 
-      href="/"
-      style={{textDecoration: "none", color: "black"}}
-    >
       <div className="page-option" 
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
-        onClick={() => {console.log("Hi")}}
+        onClick={
+          props.task
+        }
     >
         <animated.div
             className="page-option-hovered"
@@ -34,6 +38,5 @@ export const PageOption = (props) => {
          >{props.name}</animated.div>
             <div className="page-option-text">{props.name}</div>
     </div>
-    </a>
   )
 }

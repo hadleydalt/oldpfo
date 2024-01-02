@@ -18,7 +18,7 @@ export const Sidebar = (props) => {
             <div className="small-serif">Want to work together? Let me know at <b>hadley_dalton@brown.edu</b></div>
           </div>
           <div className="bottom-bar">
-            <PageNav />
+            <PageNav handleSwitch={props.handleSwitch} />
             <div className="bottom-in">
               <div className="sidebar-icons">
                 <LinkedIn />
