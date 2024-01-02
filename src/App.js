@@ -53,7 +53,8 @@ function App() {
               <SplashPage width={width} opacity={opacity} />
             </div>
           </div>
-          <div className="second-page">
+          <div 
+            className="second-page">
             {project===100 && 
               <div className="previews-wrapper">
               {Dates.map((date, index) => {

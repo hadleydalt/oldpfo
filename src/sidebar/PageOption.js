@@ -19,9 +19,14 @@ export const PageOption = (props) => {
 }, [hovered])
 
   return (
-    <div className="page-option" 
+    <a 
+      href="/"
+      style={{textDecoration: "none", color: "black"}}
+    >
+      <div className="page-option" 
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
+        onClick={() => {console.log("Hi")}}
     >
         <animated.div
             className="page-option-hovered"
@@ -29,5 +34,6 @@ export const PageOption = (props) => {
          >{props.name}</animated.div>
             <div className="page-option-text">{props.name}</div>
     </div>
+    </a>
   )
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import '../css/App.css'
 import { PageOption } from './PageOption'
 
-export const PageNav = () => {
+export const PageNav = (props) => {
 
     const names = ["Home →", "Work →", "Archive →"]
 
