@@ -33,6 +33,7 @@ export const Button = (props) => {
 
     function handleMouseUp() {
         setIsPressed(false)
+        //props.handleSwitch(100, true, false)
     }
 
     function handleMouseEnter() {

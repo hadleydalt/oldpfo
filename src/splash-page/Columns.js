@@ -29,10 +29,10 @@ export const Col1 = (props) => {
     )
 }
 
-export const Col2 = () => {
+export const Col2 = (props) => {
     return (
         <div className="sp-col-2">
-            <Box2 height={220}/>
+            <Box2 height={220} handleSwitch={props.handleSwitch} />
             <div className="icons-container">
                 <Image source='Papers' width={130}/>
                 <Image source='Folder' width={130}/>

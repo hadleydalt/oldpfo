@@ -54,7 +54,7 @@ function App() {
           <div className="first-page">
             <Sidebar width={width} handleSwitch={handleSwitch}/>
             <div className="splash-page-wrapper">
-              <SplashPage width={width} opacity={opacity} />
+              <SplashPage width={width} opacity={opacity} handleSwitch={handleSwitch} />
             </div>
           </div>
           <div 
@@ -68,7 +68,10 @@ function App() {
               })}
               </div>
             }
-            {project!==100 && 
+            {project===101 &&
+              <div style={{height: "100vh", width: "50vw", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "3vw", fontFamily: "Libre Baskerville"}}>Coming soon!</div>
+            }
+            {project<100 && 
               <Project id={project} 
                 last={() => {handleSwitch(getLast(project), false, false)}} 
                 next={() => {handleSwitch(getNext(project), false, false)}} 
