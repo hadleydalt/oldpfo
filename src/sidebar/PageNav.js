@@ -5,7 +5,7 @@ import { PageOption } from './PageOption'
 export const PageNav = (props) => {
 
     const names = ["Home →", "Work →", "Archive →"]
-    const tasks = ["", props.handleSwitch, ""]
+    const tasks = [() => props.handleSwitch(100, true, true), () => props.handleSwitch(100, true, false), ""]
 
     return (
         <div className="page-nav">

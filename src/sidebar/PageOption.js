@@ -1,16 +1,10 @@
 import '../css/App.css';
 import { useEffect, useState } from 'react'
 import { useSpring, animated } from '@react-spring/web'
-import { useWindowDimensions } from '../Functions'
 
 export const PageOption = (props) => {
 
   const [hovered, setHovered] = useState(false)
-
-  /*const handleScrollToTop = () => {
-    props.handleSwitch
-    window.scrollTo({top: height, behavior: "smooth"})
-  } */
   
   const style = useSpring({
     width: hovered ? "62%" : "0%",
