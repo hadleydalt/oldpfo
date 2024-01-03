@@ -13,7 +13,7 @@ export const Box1 = (props) => {
                     {props.planet && <img src={require('../../graphics/Planet.png')} alt="" className="planet" draggable={false} />}
                 <div className="Box1-top-wrapper">
                     <div className="box-top-text">
-                        Hello
+                        More
                     </div>
                     <div className="white-x">
                         X
@@ -22,8 +22,8 @@ export const Box1 = (props) => {
                 <div className="Box1-interior" style={{height: String((height - 50) + "px")}}>
                     <img src={require('../../graphics/Art2.png')} alt="" className="Box1-image" style={{height: String((height - 105) + "px")}} draggable={false} />
                     <div className="Box1-button-wrapper">
-                        <Button name="Button 1" width={100} height={30}/>
-                        <Button name="Button 2" width={100} height={30}/>
+                        <Button name="About" width={100} height={30}/>
+                        <Button name="Resume" width={100} height={30}/>
                     </div>
                 </div>
             </div>

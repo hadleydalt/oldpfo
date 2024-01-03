@@ -13,5 +13,5 @@ export const colorMap = {
         "gray": "rgb(172, 172, 172)"
 }
 
-export const squareButtonNames = ["op1", "op2", "op3"]
-export const nonSquareButtonNames =["op1", "op2", "op3"]
+export const squareButtonNames = ["con tact", "ran dom", "op3"]
+export const nonSquareButtonNames =["digital art", "paintings", "about brown+risd"]

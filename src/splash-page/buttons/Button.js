@@ -19,12 +19,13 @@ export const Button = (props) => {
         borderLeft: isPressed ? "none" : square ? "12px solid #E7E7E7" : "4px solid #E7E7E7",
         borderRadius: 4,
         fontFamily: "Silkscreen",
-        fontSize: 16,
+        fontSize: 12,
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         cursor: isMouseEntered ? "pointer" : "default",
-        filter: isPressed ? "drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5))" : "none"
+        filter: isPressed ? "drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5))" : "none",
+        textAlign: "center"
     }
 
     function handleMouseDown() {
@@ -33,7 +34,6 @@ export const Button = (props) => {
 
     function handleMouseUp() {
         setIsPressed(false)
-        //props.handleSwitch(100, true, false)
     }
 
     function handleMouseEnter() {

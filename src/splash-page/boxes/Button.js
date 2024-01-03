@@ -35,6 +35,7 @@ export const Button = (props) => {
                 onMouseUp={handleMouseUp}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
+                onClick={props.handleSwitch}
                 style={{
                     cursor: isMouseEntered ? "pointer" : "default",
                     borderBottom: isPressed ? "none" : "4px solid gray",
