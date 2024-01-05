@@ -7,6 +7,7 @@ import { Project } from './pages/projects/Project'
 import { Preview } from './pages/previews/Preview'
 import { Dates, Titles, ClassInfo, Skills, Tools, Info } from './pages/previews/WorkInfo'
 import { Dates as PaintDates, Titles as PaintTitles, ClassInfo as PaintClassInfo, Size, Media, Info as PaintInfo } from './pages/previews/PaintInfo'
+import { Dates as DigDates, Titles as DigTitles, ClassInfo as DigClassInfo, Size as DigSize, Media as DigMedia, Info as DigInfo } from './pages/previews/DigInfo'
 import { Messages } from './Messages'
 
 function App() {
@@ -74,6 +75,15 @@ function App() {
               {PaintDates.map((date, index) => {
                 return (
                   <Preview index={index + 1} date={date} title={PaintTitles[index]} classInfo={PaintClassInfo[index]} skills={Size[index]} tools={Media[index]} info={PaintInfo[index]} handleSwitch={() => {handleSwitch(index)}} id={102} />
+                )
+              })}
+              </div>
+            }
+            {project===103 && 
+              <div className="previews-wrapper">
+              {DigDates.map((date, index) => {
+                return (
+                  <Preview index={index + 1} date={date} title={DigTitles[index]} classInfo={DigClassInfo[index]} skills={DigSize[index]} tools={DigMedia[index]} info={DigInfo[index]} handleSwitch={() => {handleSwitch(index)}} id={103} />
                 )
               })}
               </div>

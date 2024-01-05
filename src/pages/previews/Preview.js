@@ -3,7 +3,7 @@ import '../../css/App.css'
 
 export const Preview = (props) => {
     const id = props.id
-    const index = id === 102 ? props.index + 7 : props.index
+    const index = id === 102 ? props.index + 7 : id === 103 ? props.index + 18 : props.index
     const date = props.date
     const title = props.title
     const classInfo = props.classInfo
@@ -31,7 +31,7 @@ export const Preview = (props) => {
                     </div>
                     <div className="preview-text-info" style={{borderLeft: "1px solid black", paddingLeft: "0.5vw", lineHeight: "2.5vh"}}>
                         <div className="info">{info}</div>
-                        <button
+                        {id === 100 && <button
                             onClick={props.handleSwitch}
                             style={{
                                 background: "transparent",
@@ -41,7 +41,7 @@ export const Preview = (props) => {
                             }}
                         >
                             <div className="hi">Click for more ➛</div>
-                        </button>
+                        </button>}
                     </div>
                 </div>
             </div>

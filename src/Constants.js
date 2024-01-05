@@ -17,7 +17,7 @@ export const squareButtonNames = ["con tact", "ran dom", "op3"]
 export const nonSquareButtonNames =["digital art", "paintings", "about brown+risd"]
 
 export const nonSquareLinks = [false, false, true]
-export const nonSquareNavs = ["", 102, "https://www.brown.edu/academics/brown-risd-dual-degree/home"]
+export const nonSquareNavs = [103, 102, "https://www.brown.edu/academics/brown-risd-dual-degree/home"]
 
 export const squareLinks = [false, false, false]
 export const squareNavs = ["", "", ""]
