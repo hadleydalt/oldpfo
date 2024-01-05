@@ -7,6 +7,9 @@ export const ThreeButtons = (props) => {
     const names = props.names
     const square = props.square
 
+    const links = props.links
+    const navs = props.navs
+
     const wrapperStyle = {
         height: square ? 250 : 150,
         width: square ? 80 : 170,
@@ -32,7 +35,7 @@ export const ThreeButtons = (props) => {
         <div style={wrapperStyle}>
             {classNames.map((className, index) => {
                 return (
-                    <Button key={index} name={names[index]} bgStyle={bgStyle} className={className} square={square} />
+                    <Button key={index} name={names[index]} bgStyle={bgStyle} className={className} square={square} link={links[index]} nav={navs[index]} />
                 )
             })}
         </div>

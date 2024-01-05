@@ -9,6 +9,8 @@ export const Button = (props) => {
     const bgStyle = props.bgStyle
     const name = props.name
     const square = props.square
+    const link = props.link
+    const nav = props.nav
 
     const buttonStyle = {
         width: square && isPressed ? 69 : square && !isPressed ? 45 : !square && isPressed ? 168 : 160,
@@ -47,6 +49,7 @@ export const Button = (props) => {
 
     return (
             <div style={bgStyle}>
+                {link && <a style={{color: "black", textDecoration: "none"}} href={nav}>
                 <div 
                     className={className} 
                     style={buttonStyle}
@@ -57,6 +60,17 @@ export const Button = (props) => {
                 >
                     {name}
                 </div>
+                </a>}
+                {!link && <div 
+                    className={className} 
+                    style={buttonStyle}
+                    onMouseDown={handleMouseDown}
+                    onMouseUp={handleMouseUp}
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                >
+                    {name}
+                </div>}
             </div>
     )
 }
