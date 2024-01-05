@@ -46,11 +46,11 @@ export const Col2 = (props) => {
     )
 }
 
-export const Col3 = () => {
+export const Col3 = (props) => {
     return (
         <div className="sp-col-3">
             <Notepad height={330}/>
-            <ThreeButtons square={false} names={nonSquareButtonNames} links={nonSquareLinks} navs={nonSquareNavs}/>
+            <ThreeButtons square={false} names={nonSquareButtonNames} links={nonSquareLinks} navs={nonSquareNavs} handleSwitch={props.handleSwitch} />
         </div>
     )
 }

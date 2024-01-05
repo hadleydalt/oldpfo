@@ -15,7 +15,7 @@ export const SplashPage = (props) => {
             <div className="splash-page" style={{justifyContent: width < 1370 ? "space-evenly" : "space-between", marginTop: width < 877 ? "20vh" : "0"}}>
                 <Col1 width = {width} />
                 {width >= 877 && <Col2 handleSwitch={props.handleSwitch} />}
-                {width >= 1370 && <Col3 />}
+                {width >= 1370 && <Col3 handleSwitch={props.handleSwitch} />}
             </div>
         </>
     )

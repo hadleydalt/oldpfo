@@ -35,7 +35,7 @@ export const ThreeButtons = (props) => {
         <div style={wrapperStyle}>
             {classNames.map((className, index) => {
                 return (
-                    <Button key={index} name={names[index]} bgStyle={bgStyle} className={className} square={square} link={links[index]} nav={navs[index]} />
+                    <Button key={index} name={names[index]} bgStyle={bgStyle} className={className} square={square} link={links[index]} nav={navs[index]} handleSwitch={props.handleSwitch}/>
                 )
             })}
         </div>

@@ -6,6 +6,7 @@ import { Sidebar } from './sidebar/Sidebar'
 import { Project } from './pages/projects/Project'
 import { Preview } from './pages/previews/Preview'
 import { Dates, Titles, ClassInfo, Skills, Tools, Info } from './pages/previews/WorkInfo'
+import { Dates as PaintDates, Titles as PaintTitles, ClassInfo as PaintClassInfo, Size, Media, Info as PaintInfo } from './pages/previews/PaintInfo'
 import { Messages } from './Messages'
 
 function App() {
@@ -63,7 +64,16 @@ function App() {
               <div className="previews-wrapper">
               {Dates.map((date, index) => {
                 return (
-                  <Preview index={index + 1} date={date} title={Titles[index]} classInfo={ClassInfo[index]} skills={Skills[index]} tools={Tools[index]} info={Info[index]} handleSwitch={() => {handleSwitch(index)}} />
+                  <Preview index={index + 1} date={date} title={Titles[index]} classInfo={ClassInfo[index]} skills={Skills[index]} tools={Tools[index]} info={Info[index]} handleSwitch={() => {handleSwitch(index)}} id={100} />
+                )
+              })}
+              </div>
+            }
+            {project===102 && 
+              <div className="previews-wrapper">
+              {PaintDates.map((date, index) => {
+                return (
+                  <Preview index={index + 1} date={date} title={PaintTitles[index]} classInfo={PaintClassInfo[index]} skills={Size[index]} tools={Media[index]} info={PaintInfo[index]} handleSwitch={() => {handleSwitch(index)}} id={102} />
                 )
               })}
               </div>

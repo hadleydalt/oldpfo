@@ -21,23 +21,35 @@ export const Size = [
     "20x20 inches",
     "3x4 feet",
     "18x24 inches",
-    "Approx. 3x5x2 feet"
+    "Approx. 3x5x2 feet",
+    "11x14 inches",
+    "3x4 feet",
+    "18x24 inches",
+    "Each 8.5x11 inches"
 ]
 export const Media = [
-    "Blender, Unity, VRChat",
-    "React, TypeScript, SCSS, MongoDB",
-    "React Native, JavaScript, Docker",
-    "Java, JavaFX",
-    "Figma",
-    "Figma, React, JavaScript",
-    "C++, OpenGL"
+    "Charcoal",
+    "Guache, newsaper collage",
+    "Oil",
+    "Oil",
+    "Oil, acrylic",
+    "Gouache, watercolor",
+    "Paper",
+    "Colored pencil",
+    "Oil",
+    "Acrylic",
+    "Ink, photo collage"
 ]
 export const Info = [
-    "Cat Finder is an adventure game with the objective of offering users a refuge from the stress of everyday life. Modelled from scratch in Blender and programmed in Unity, the game can be played on PC or in VR!",
-    "I was challenged to code an IDE for document-based networks using TypeScript, React, and SCSS. I used this challenge as an opportunity to propose some suggestions for a hypothetical redesign of the existing web app.",
-    "Soma is an app which allows users to track and monitor chronic pain. I coded responsive components and offered design suggestions that would facilitate user navigation.",
-    "I created a game which allows users to track their productivity and earn pets in exchange. The goal of the game is to offer users an incentive to study! This was my first independent programming project.",
-    "A design for the pilot website of Boston AI Labs: a startup company that designs AI technology to detect and combat Retinopathy of Prematurity in newborn infants.",
-    "I architected and executed responsive web solutions, and also redesigned existing web pages with mindfulness of UX principles. I also conducted user testing.",
-    "I created a ray tracer which parses tree-based scene representations, projects a ray to calculate intersection points, and uses a Phong lighting model to color each pixel of an image."
+    "For this assignment, I was asked to study an object and draw it repeatedly to create a rhythmic composition. I chose a shell. ",
+    "In this piece, I chose to showcase various representations of triumph across historical, artistic, and contemporary contexts.",
+    "My challenge was to be more open and fluid in my work, developing my technique from previous paintings. This painting articulates confusion.",
+    "I collected a series of digital and fine artworks exhibiting subjects whose insides are depicted or imagined in an unorthodox way.",
+    "A painting born out of spontaneous decisions and many failed attempts. This painting is a celebration of sponaneity, impulsivity, and failure.",
+    "In painting this image, which references a photograph, I attempted to develop my illustrative skills and bring colorful vibrancy to a scene.",
+    "With this dress I represent ideas such as beauty, purity, and even marriage in a fragile, transient, paper form.",
+    "This is a surrealist piece in which I sought to create a dreamlike atmosphere, drawing inspiration from surrealist and fauvist masters.",
+    "Each face, cast below the surface of the water, represents an emotion I am not allowing myself to feel.",
+    "This assignment is an exercise in creating the illusion of transparency.",
+    "In this series of collages I showcase aspects of Kowloon Walled City, including its overpopulation and eventual demolition at the hands of the Hong Kong government."
 ]
