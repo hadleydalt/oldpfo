@@ -23,5 +23,5 @@ function rand(max) {
     return Math.floor(Math.random() * max)
 }
 
-export const squareLinks = [false, false, false]
-export const squareNavs = ["", rand(7), ""]
+export const squareLinks = [true, false, false]
+export const squareNavs = ["mailto:hadley_dalton@brown.edu", rand(7), ""]

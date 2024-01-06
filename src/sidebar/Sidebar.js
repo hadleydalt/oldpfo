@@ -21,10 +21,10 @@ export const Sidebar = (props) => {
             <PageNav handleSwitch={props.handleSwitch} />
             <div className="bottom-in">
               <div className="sidebar-icons">
-                <LinkedIn />
-                <Mail />
-                <GitHub />
-                <Instagram />
+                <a href="https://www.linkedin.com/in/hadley-dalton-057041188/"><LinkedIn /></a>
+                <a href="mailto:hadley_dalton@brown.edu" style={{color: "black"}}><Mail /></a>
+                <a href="http://github.com/hadleydalt"><GitHub /></a>
+                <a href="http://instagram.com/hadleysart"><Instagram /></a>
               </div>
               <div className="sidebar-cp">
                 Hadley Dalton © 2023
