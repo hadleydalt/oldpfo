@@ -68,7 +68,7 @@ export const Button = (props) => {
                     onMouseUp={handleMouseUp}
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
-                    onClick={() => props.handleSwitch(102, true, false)}
+                    onClick={() => props.handleSwitch(nav, true, false)}
                 >
                     {name}
                 </div>}

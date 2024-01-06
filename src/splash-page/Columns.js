@@ -23,11 +23,11 @@ export const Col1 = (props) => {
                     <Box1 planet={true} bg={true} height={290}/>
                     {width < 1370 &&
                         <div className="buttons-col-1">
-                            <ThreeButtons square={false} names={nonSquareButtonNames} links={nonSquareLinks} navs={nonSquareNavs} />
-                            <ThreeButtons square={true} names={squareButtonNames} links={squareLinks} navs={squareNavs} />
+                            <ThreeButtons square={false} names={nonSquareButtonNames} links={nonSquareLinks} navs={nonSquareNavs} handleSwitch={props.handleSwitch}/>
+                            <ThreeButtons square={true} names={squareButtonNames} links={squareLinks} navs={squareNavs} handleSwitch={props.handleSwitch}/>
                         </div>
                     }
-                    {width >= 1370 && <ThreeButtons square={true} names={squareButtonNames} links={squareLinks} navs={squareNavs} />}
+                    {width >= 1370 && <ThreeButtons square={true} names={squareButtonNames} links={squareLinks} navs={squareNavs} handleSwitch={props.handleSwitch}/>}
                 </>
         </div>
     )

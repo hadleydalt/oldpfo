@@ -19,5 +19,9 @@ export const nonSquareButtonNames =["digital art", "paintings", "about brown+ris
 export const nonSquareLinks = [false, false, true]
 export const nonSquareNavs = [103, 102, "https://www.brown.edu/academics/brown-risd-dual-degree/home"]
 
+function rand(max) {
+    return Math.floor(Math.random() * max)
+}
+
 export const squareLinks = [false, false, false]
-export const squareNavs = ["", "", ""]
+export const squareNavs = ["", rand(7), ""]
