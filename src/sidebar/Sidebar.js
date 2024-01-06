@@ -30,7 +30,7 @@ export const Sidebar = (props) => {
                 Hadley Dalton © 2023
               </div>
               <div className="sidebar-lastupdated">
-                Site was last updated on December 30, 2023
+                Site was last updated on January 6, 2024
               </div>
             </div>
           </div>

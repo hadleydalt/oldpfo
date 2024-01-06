@@ -14,7 +14,7 @@ function App() {
 
   const { height, width } = useWindowDimensions()
   const [scrollPos, setScrollPos] = React.useState(0)
-  const [project, setProject] = React.useState(100)
+  const [project, setProject] = React.useState(104)
   
 
   const handleScroll = () => {
@@ -86,6 +86,12 @@ function App() {
                   <Preview index={index + 1} date={date} title={DigTitles[index]} classInfo={DigClassInfo[index]} skills={DigSize[index]} tools={DigMedia[index]} info={DigInfo[index]} handleSwitch={() => {handleSwitch(index)}} id={103} />
                 )
               })}
+              </div>
+            }
+            {project===104 && 
+              <div className="about-wrapper">
+                <img className="about-bg" src={require("./graphics/PinkBg.jpg")} alt=""/>
+                <div className="about-interior"></div>
               </div>
             }
             {project===101 &&

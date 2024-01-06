@@ -761,6 +761,29 @@
   background: black;
 }
 
+.about-wrapper {
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-bg {
+  width: 80vw;
+  height: 100vh;
+  position: absolute;
+}
+
+.about-interior {
+  width: 70vw;
+  height: 80vh;
+  border-radius: 20px;
+  opacity: 0.7;
+  background: white;
+  z-index: 1;
+}
+
 .tb-button {
   background: linear-gradient(45deg, rgb(255, 186, 238) 0%, rgb(194, 244, 255) 50%, rgb(240, 255, 172) 100%);
 }
