@@ -49,3 +49,5 @@ export const Info = [
     "I was commissioned to illustrate some quotes comparing the West to Asia in the style of cartoonist Saul Steinberg. In each illustration, the leftmost image depicts the West while the rightmost depicts Asia.",
     "I am trapped in quarantine and the internet has become the world. I wanted to imagine the feeling of being caged while also depicting the sensationalized version of the world that I experience through the internet."
 ]
+
+export const Margins = ["0vw", "-40vw", "0vw", "0vw", "0vw", "-30vw", "0vw", "-30vw", "-18vw", "-30vw"]

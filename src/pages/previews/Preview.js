@@ -10,12 +10,22 @@ export const Preview = (props) => {
     const skills = props.skills
     const tools = props.tools
     const info = props.info
+    const margin = props.margin
+
+    const height = props.height
+
+    const [expanded, setExpanded] = React.useState(false)
+
+    function handleExpand() {
+        setExpanded(!expanded)
+    }
     
 
 
     return (
         <div className="preview-wrapper">
-            <img className="preview-image" src={require("../../graphics/previews/" + String(index) + ".png")} alt="" style={{objectFit: "cover"}}/>
+            <img className="preview-image" src={require("../../graphics/previews/" + String(index) + ".png")} alt="" onClick={id > 100 ? handleExpand : null} style={{zIndex: expanded ? 2 : 1, position: expanded ? "absolute" : "relative", height: expanded ? height : "70%", width: expanded ? "auto" : "100%", objectFit: "cover", filter: expanded ? "drop-shadow(10px 10px 10px black)" : "none", marginLeft: expanded ? margin : "0"}}/>
+            {expanded && <div className="expand-message">Click again to reduce size</div>}
             <div className="preview-text-wrapper">
                 <div className="preview-text-date">
                 <b>{index + ". "} </b>{date}
@@ -42,6 +52,7 @@ export const Preview = (props) => {
                         >
                             <div className="hi">Click for more ➛</div>
                         </button>}
+                        {id>100 && <div className="hi">Click image to expand it</div>}
                     </div>
                 </div>
             </div>

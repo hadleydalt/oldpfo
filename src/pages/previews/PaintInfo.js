@@ -53,3 +53,5 @@ export const Info = [
     "This assignment is an exercise in creating the illusion of transparency.",
     "In this series of collages I showcase aspects of Kowloon Walled City, including its overpopulation and eventual demolition at the hands of the Hong Kong government."
 ]
+
+export const Margins = ["0vw", "0vw", "0vw", "-10vw", "0vw", "0vw", "0vw", "-50vw", "0vw", "-10vw", "-10vw"]
