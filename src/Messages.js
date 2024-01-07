@@ -12,7 +12,7 @@ export const Messages = (props) => {
                 <>
                     <div className="height-message">
                         For best results, please view on a larger screen or maximize your window!
-                        <img src={require("./graphics/messages/phonelaptop.png")} alt="" style={{width: "70%"}}/>
+                        <img src={require("./graphics/phonelaptop.png")} alt="" style={{width: "70%"}}/>
                     </div>
                     <div className="height-message-bg">
                     </div>
