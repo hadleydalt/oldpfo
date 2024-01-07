@@ -19,7 +19,7 @@ export const AboutBox = (props) => {
                   <div className="about-title">Hadley Dalton</div>
                   </div>
                   <div className="about-box">
-                    {text === 0 && <div className="about-text"><span className="about-accent">Hadley</span> <span className="about-small">(HAD-lee)</span> is a student of the Brown|RISD Dual Degree program in Providence, RI. She is interested in developing products to address the issues that people encounter, ranging from a personal to macro scale. Despite the ever-expanding capabilities of AI, Hadley believes that empathy is a critical component of any product that utilizes software technology. With her mission and design strategies, she hopes to bridge the gap between technology and empathy, and make a difference in people's lives.</div>}
+                    {text === 0 && <div className="about-text" style={{lineHeight: "4.5vh"}}><span className="about-accent">Hadley</span> <span className="about-small">(HAD-lee)</span> is a student of the Brown|RISD Dual Degree program in Providence, RI. She is interested in developing products to address the issues that people encounter, ranging from a <span class="personal">personal</span> to <span class="macro">macro</span> scale. Despite the ever-expanding capabilities of AI, Hadley believes that empathy is a critical component of any product that utilizes software technology. With her mission and design strategies, she hopes to bridge the gap between technology and empathy, and make a difference in people's lives.</div>}
                     {text === 1 && <div className="about-projects">
                         <div className="scale" />
                         <div className="scale-titles">

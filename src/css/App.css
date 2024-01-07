@@ -804,6 +804,20 @@
   filter: drop-shadow(15px 15px 0px #fadfa6)
 }
 
+.personal {
+  letter-spacing: -1px;
+  font-family: "Libre Baskerville";
+  font-size: 1vw;
+  font-weight: bold;
+}
+
+.macro {
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-family: "Libre Baskerville";
+  font-size: 2vw;
+}
+
 .about-text {
   color: white;
   font-family: "Work Sans";
