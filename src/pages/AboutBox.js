@@ -18,6 +18,16 @@ export const AboutBox = (props) => {
                   <img style={{width: "12vw", marginTop: "-9vh", marginLeft: "10vw", position: "absolute"}} src={require("../graphics/initials.png")} alt="" />
                   <div className="about-title">Hadley Dalton</div>
                   </div>
+                  <div className="about-container">
+                  <div className="favs-box">
+                    <div className="stats"> {"> "}Currently</div>
+                    <div className="project-list" style={{marginLeft: "0vw", paddingTop: "1vh", color: "#725a28", borderBottom: "1px solid rgba(191, 163, 20, 0.5)"}}><span className="project-name">➛ Working on</span> Hello </div>
+                    <div className="project-list" style={{marginLeft: "0vw", paddingTop: "1vh", color: "#725a28", borderBottom: "none"}}><span className="project-name">➛ Finished</span> Hello </div>
+                    <div className="stats"> {"> "}Favorites</div>
+                    <div className="project-list" style={{marginLeft: "0vw", paddingTop: "1vh", color: "#725a28", borderBottom: "1px solid rgba(191, 163, 20, 0.5)"}}><span className="project-name">➛ Aesthetic</span> Hello </div>
+                    <div className="project-list" style={{marginLeft: "0vw", paddingTop: "1vh", color: "#725a28", borderBottom: "1px solid rgba(191, 163, 20, 0.5)"}}><span className="project-name">➛ Creative outlet</span> Hello </div>
+                    <div className="project-list" style={{marginLeft: "0vw", paddingTop: "1vh", color: "#725a28", borderBottom: "none"}}><span className="project-name">➛ Startup</span> Hello </div>
+                  </div>
                   <div className="about-box">
                     {text === 0 && <div className="about-text" style={{lineHeight: "4.5vh"}}><span className="about-accent">Hadley</span> <span className="about-small">(HAD-lee)</span> is a student of the Brown|RISD Dual Degree program in Providence, RI. She is interested in developing products to address the issues that people encounter, ranging from a <span class="personal">personal</span> to <span class="macro">macro</span> scale. Despite the ever-expanding capabilities of AI, Hadley believes that empathy is a critical component of any product that utilizes software technology. With her mission and design strategies, she hopes to bridge the gap between technology and empathy, and make a difference in people's lives.</div>}
                     {text === 1 && <div className="about-projects">
@@ -33,6 +43,7 @@ export const AboutBox = (props) => {
                         </div>
                         </div>}
                     <div className="about-accent" onClick={handleClick} style={{marginLeft: text === 1 ? "85%" : "75%", marginTop: "-3vh", cursor: "pointer"}}>{text === 0 ? "Impact so far →" : "Back →"}</div>
+                  </div>
                   </div>
                 </div>
               </div>
