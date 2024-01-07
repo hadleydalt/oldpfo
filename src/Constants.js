@@ -13,7 +13,7 @@ export const colorMap = {
         "gray": "rgb(172, 172, 172)"
 }
 
-export const squareButtonNames = ["con tact", "ran dom", "op3"]
+export const squareButtonNames = ["con tact", "ran dom", "inspo"]
 export const nonSquareButtonNames =["digital art", "paintings", "about brown+risd"]
 
 export const nonSquareLinks = [false, false, true]
@@ -23,5 +23,5 @@ function rand(max) {
     return Math.floor(Math.random() * max)
 }
 
-export const squareLinks = [true, false, false]
-export const squareNavs = ["mailto:hadley_dalton@brown.edu", rand(7), ""]
+export const squareLinks = [true, false, true]
+export const squareNavs = ["mailto:hadley_dalton@brown.edu", rand(7), "https://www.pinterest.com/hadleydalt"]
