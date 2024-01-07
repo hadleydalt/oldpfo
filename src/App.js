@@ -5,6 +5,7 @@ import { SplashPage } from './splash-page/SplashPage'
 import { Sidebar } from './sidebar/Sidebar'
 import { Project } from './pages/projects/Project'
 import { Preview } from './pages/previews/Preview'
+import { AboutBox } from './pages/AboutBox'
 import { Dates, Titles, ClassInfo, Skills, Tools, Info } from './pages/previews/WorkInfo'
 import { Dates as PaintDates, Titles as PaintTitles, ClassInfo as PaintClassInfo, Size, Media, Info as PaintInfo } from './pages/previews/PaintInfo'
 import { Dates as DigDates, Titles as DigTitles, ClassInfo as DigClassInfo, Size as DigSize, Media as DigMedia, Info as DigInfo } from './pages/previews/DigInfo'
@@ -89,10 +90,7 @@ function App() {
               </div>
             }
             {project===104 && 
-              <div className="about-wrapper">
-                <img className="about-bg" src={require("./graphics/PinkBg.jpg")} alt=""/>
-                <div className="about-interior"></div>
-              </div>
+              <AboutBox />
             }
             {project===101 &&
               <div style={{height: "100vh", width: "50vw", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "3vw", fontFamily: "Libre Baskerville"}}>Coming soon!</div>
