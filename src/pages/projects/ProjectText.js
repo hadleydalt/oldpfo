@@ -18,7 +18,9 @@ export const Text = [
         <div className="h1">Design Goals</div>
         <div>Create a game that will offer players a refuge from the stress of everyday life.</div>
         <div className="h1">Video Tour</div>
-        <div className="project-visual"></div>
+        <iframe width="95%" height="auto" title="Video Tour"
+            src="https://www.youtube.com/watch?v=w_C5BKDNCok">
+        </iframe>
         <div className="h1">Full Game Description</div>
         <div>The game can be played on a PC or in VR. In addition, the user can play 
             the game to explore the city, or partake in the scavenger hunt. Either 
