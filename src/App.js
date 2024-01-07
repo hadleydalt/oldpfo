@@ -15,7 +15,7 @@ function App() {
 
   const { height, width } = useWindowDimensions()
   const [scrollPos, setScrollPos] = React.useState(0)
-  const [project, setProject] = React.useState(104)
+  const [project, setProject] = React.useState(100)
   
 
   const handleScroll = () => {

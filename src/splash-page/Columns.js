@@ -20,7 +20,7 @@ export const Col1 = (props) => {
     return (
         <div className="sp-col-1">
                 <>
-                    <Box1 planet={true} bg={true} height={290}/>
+                    <Box1 planet={true} bg={true} height={290} handleSwitch={props.handleSwitch} />
                     {width < 1370 &&
                         <div className="buttons-col-1">
                             <ThreeButtons square={false} names={nonSquareButtonNames} links={nonSquareLinks} navs={nonSquareNavs} handleSwitch={props.handleSwitch}/>
