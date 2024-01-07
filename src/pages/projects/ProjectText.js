@@ -21,6 +21,7 @@ export const Text = [
         <iframe width="95%" height="auto" title="Video Tour"
             src="https://www.youtube.com/watch?v=w_C5BKDNCok">
         </iframe>
+        <a style={{color: "black"}} href="https://youtu.be/w_C5BKDNCok">Click here if video is not working</a>
         <div className="h1">Full Game Description</div>
         <div>The game can be played on a PC or in VR. In addition, the user can play 
             the game to explore the city, or partake in the scavenger hunt. Either 
